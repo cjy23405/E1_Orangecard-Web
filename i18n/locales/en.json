@@ -1,0 +1,16 @@
+{
+  "head": {
+    "title": "Eco-friendly for everyone, E1 Orange Card",
+    "description": "Enjoy various privileges such as points, affiliate benefits, and events for E1 Orange Card customers."
+  },
+  "location": {},
+  "apiErrorMessage": {
+    "001": "The \"endpoint\" does not exist.",
+    "002": "\"apiBaseURL\" is not defined.",
+    "003": "Server error",
+    "004": "Refresh Token Error"
+  },
+  "alertButton": {},
+  "alertMessage": {},
+  "formMessage": {}
+}

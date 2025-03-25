@@ -1,0 +1,10 @@
+# lock files
+pnpm-lock.yaml
+package-lock.json
+
+# js from Morpheus
+public/js/*.js
+
+# min file
+**/*.min.css
+**/*.min.js

@@ -1,0 +1,1874 @@
+<template>
+  <div id="divContentes" class="data-terms">
+    <div>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">E1 orangecard 개인정보 처리방침</dt>
+        <dd class="sub-dep1 mb25">
+          주식회사 E1(이하 ‘E1’)이 운영하는 E1orangecard.com은 회원님들의
+          개인정보를 매우 중요하게 생각하며, 회원님께서 제공하여 주신 모든
+          개인정보를 철저히 보호하여 회원님께서 회사가 제공하는 모든 서비스를
+          안전하게 이용 할 수 있도록 하는 것을 제1의 운영원칙으로 삼고 있습니다.
+          회사는 개인정보보호법에 따라 다음과 같이 개인정보 처리방침을
+          명시합니다.
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">주요 개인정보 처리 표시(라벨링)</dt>
+        <dd>
+          <div class="labeling_box">
+            <ul>
+              <li>
+                <img
+                  src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_Labeling_01.png"
+                  alt="개인정보 수집"
+                />
+                <h3>일반 개인정보 수집</h3>
+                <div class="desc_box">
+                  <ul>
+                    <li>아이디</li>
+                    <li>비밀번호</li>
+                    <li>오렌지카드번호 등</li>
+                  </ul>
+                  <ul>
+                    <li>이름</li>
+                    <li>휴대전화번호</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_Labeling_02.png"
+                  alt="개인정보 처리목적"
+                />
+                <h3>개인정보 처리목적</h3>
+                <div class="desc_box">
+                  <ul>
+                    <li>
+                      온라인/유선/간편 회원가입, 간편로그인 서비스 제공 등
+                    </li>
+                    <li>맞춤형 혜택/이벤트 정보 제공 및 참여 등</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_Labeling_03.png"
+                  alt="개인정보 보유기간"
+                />
+                <h3>개인정보 보유기간</h3>
+                <div class="desc_box">
+                  <ul>
+                    <li>보유기간 경과 또는 처리목적 달성 시 까지</li>
+                    <li>상담 관리 : 3년</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_Labeling_04.png"
+                  alt="개인정보 처리위탁"
+                />
+                <h3>개인정보 처리위탁</h3>
+                <div class="desc_box">
+                  <ul>
+                    <li>㈜스마트로</li>
+                    <li>㈜엘지씨엔에스</li>
+                    <li>㈜세림SC</li>
+                  </ul>
+                  <ul>
+                    <li>SCI평가정보㈜</li>
+                    <li>퀸텟시스템즈㈜</li>
+                    <li>㈜LG유플러스 등 10개</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_Labeling_05.png"
+                  alt="개인정보의 제공"
+                />
+                <h3>개인정보의 제공</h3>
+                <div class="desc_box">
+                  <ul>
+                    <li>에이치디씨아이파크몰㈜, ㈜케이티알파 등 8개</li>
+                    <li>회원번호, 회원명, 휴대전화번호 등</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_Labeling_06.png"
+                  alt="개인정보 열람 청구"
+                />
+                <h3>개인정보 열람 청구</h3>
+                <div class="desc_box">
+                  <ul>
+                    <li>정보기술팀 / 강희석</li>
+                    <li>02-3441-4265</li>
+                    <li>security@e1.co.kr</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <p class="sub-desc terms">※ 세부사항은 아래의 처리방침 본문 확인</p>
+          </div>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">목차</dt>
+        <dd>
+          <ul>
+            <li class="sub-dep1 mb0">1. 처리하는 개인정보 항목</li>
+            <li class="sub-dep1 mb0">2. 개인정보의 처리목적</li>
+            <li class="sub-dep1 mb0">3. 개인정보의 수집방법</li>
+            <li class="sub-dep1 mb0">4. 개인정보의 제3자 제공에 관한 사항</li>
+            <li class="sub-dep1 mb0">5. 개인정보 위탁관리</li>
+            <li class="sub-dep1 mb0">6. 링크사이트</li>
+            <li class="sub-dep1 mb0">7. 광고성 정보 전송</li>
+            <li class="sub-dep1 mb0">8. 개인정보의 처리 및 보유 기간</li>
+            <li class="sub-dep1 mb0">9. 개인정보의 파기절차 및 방법</li>
+            <li class="sub-dep1 mb0">10. 개인정보의 열람 및 정정</li>
+            <li class="sub-dep1 mb0">11. 개인정보의 처리정지</li>
+            <li class="sub-dep1 mb0">12. 회원탈퇴 절차 및 방법</li>
+            <li class="sub-dep1 mb0">13. 만 14세 미만 아동의 개인정보보호</li>
+            <li class="sub-dep1 mb0">14. 쿠키에 의한 개인정보 수집</li>
+            <li class="sub-dep1 mb0">15. 개인위치정보의 처리</li>
+            <li class="sub-dep1 mb0">
+              16. 개인정보보호를 위한 안전성 확보 대책
+            </li>
+            <li class="sub-dep1 mb0">
+              17. 개인정보 보호책임자/위치정보관리책임자
+            </li>
+            <li class="sub-dep1 mb0">18. 개인정보 관련 불만처리</li>
+            <li class="sub-dep1 mb0">
+              19. 추가적인 이용·제공이 지속적으로 발생 시 판단 기준
+            </li>
+            <li class="sub-dep1 mb0">20. 정책 변경에 따른 공지</li>
+          </ul>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_11.png"
+            alt="개인정보의 처리 항목"
+          />제1조 처리하는 개인정보 항목
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회사는 회원가입(계약성립), 서비스 제공 등을 위해 적법하고
+              공정한 수단에 의하여 아래의 각 호와 같은 정보를 수집하고 있습니다.
+              <div class="table-terms mt10">
+                <table class="table" style="margin: 10px 0">
+                  <caption>
+                    개인정보를 제공받는 업체와 제공되는 개인정보 및 이용목적,
+                    보유 및 이용기관과 동의 거부에 따른 불이익을 안내하는
+                    테이블입니다.
+                  </caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
+                    <col style="width: 55%" />
+                    <col style="width: 15%" />
+                  </colgroup>
+                  <thead>
+                    <tr class="first">
+                      <th colspan="2">구분 (* 제3자로부터 제공 받는 항목)</th>
+                      <th>처리항목</th>
+                      <th>보유·이용 기간</th>
+                    </tr>
+                  </thead>
+                  <tbody style="border-right: 1px solid #ccc">
+                    <tr>
+                      <td class="vcol tc" rowspan="8">회원관리</td>
+
+                      <td class="vcol tc">온라인 회원가입</td>
+                      <td class="vcol" style="padding: 2%">
+                        (홈페이지)
+                        <div>
+                          <strong>필수항목</strong> : 아이디, 비밀번호, 이메일,
+                          이름, 휴대전화번호, 생년월일, 이용자 식별자(CI)
+                        </div>
+                        <div>
+                          <strong>선택항목</strong> : 성별, 주소, 자택전화번호,
+                          결혼기념일, 차량정보(차량유종, 차량번호, 차량유형,
+                          제조자, 모델, 연식)
+                        </div>
+                        (모바일앱)
+                        <div>
+                          <strong>필수항목</strong> : 아이디, 비밀번호, 이메일,
+                          이름, 휴대전화번호, 생년월일, 이용자 식별자(CI)
+                        </div>
+                        <div>
+                          <strong>선택항목</strong> : 주소, 자택전화번호,
+                          차량정보(차량유종, 차량번호, 차량유형, 제조자, 모델,
+                          연식)
+                        </div>
+                        (챗봇)
+                        <div>
+                          <strong>필수항목</strong> : 아이디, 비밀번호, 이메일,
+                          이름, 휴대전화번호, 생년월일, 이용자 식별자(CI)
+                        </div>
+                        <div>
+                          <strong>선택항목</strong> : 주소, 자택전화번호,
+                          결혼기념일, 차량정보(차량유종, 차량번호, 차량유형,
+                          제조자, 모델, 연식)
+                        </div>
+                      </td>
+                      <td class="vcol tc">회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">간편가입 신청</td>
+                      <td class="vcol" style="padding: 2%">
+                        (충전소)
+                        <div>
+                          <strong>필수항목</strong> : 이름, 휴대전화번호
+                        </div>
+                        (IVR)
+                        <div>
+                          <strong>필수항목</strong> : 오렌지카드번호,
+                          휴대전화번호
+                        </div>
+                      </td>
+                      <td class="vcol tc">30일</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">유선 회원가입</td>
+                      <td class="vcol" style="padding: 2%">
+                        (상담원)
+                        <div>
+                          <strong>필수항목</strong> : 이름, 휴대전화번호,
+                          생년월일
+                        </div>
+                      </td>
+                      <td class="vcol tc">회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">카카오 간편가입*</td>
+                      <td class="vcol" style="padding: 2%">
+                        <strong>필수항목</strong> : 이용자 고유 식별자(Unique
+                        ID), 이용자 식별자(CI), 이름, 휴대전화번호, 생년월일,
+                        이메일
+                      </td>
+                      <td class="vcol tc">회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">간편 로그인*</td>
+                      <td class="vcol" style="padding: 2%">
+                        (카카오)
+                        <div>
+                          이용자 고유 식별자(Unique ID), 이용자 식별자(CI),
+                          이름, 휴대전화번호, 생년월일
+                        </div>
+                        (네이버)
+                        <div>이용자 고유 식별자(Unique ID)</div>
+                        (애플)
+                        <div>이용자 고유 식별자(Unique ID)</div>
+                      </td>
+                      <td class="vcol tc">회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">제휴카드사*</td>
+                      <td class="vcol" style="padding: 2%">
+                        (제휴카드사)
+                        <div>
+                          이용자 식별자(CI), 신용카드번호, 이름, 휴대전화번호,
+                          생년월일, 성별
+                        </div>
+                      </td>
+                      <td class="vcol tc">회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">모바일월렛 카드등록*</td>
+                      <td class="vcol" style="padding: 2%">
+                        (Syrup)
+                        <div>
+                          이용자 식별자(CI), 이름, 휴대전화번호, 이메일,
+                          생년월일, 성별, 오렌지카드번호
+                        </div>
+                      </td>
+                      <td class="vcol tc">회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">본인확인*</td>
+                      <td class="vcol" style="padding: 2%">
+                        (휴대전화번호/아이핀)
+                        <div>
+                          <strong>필수항목</strong> : 이름, 휴대전화번호,
+                          생년월일, 이용자 식별자(CI)
+                        </div>
+                        (마이핀)
+                        <div>
+                          <strong>필수항목</strong> : 마이핀 번호, 이용자
+                          식별자(CI)
+                        </div>
+                      </td>
+                      <td class="vcol tc">
+                        회원탈퇴 시 (마이핀 번호는 본인확인 후 즉시파기)
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">카드 관리</td>
+                      <td class="vcol tc">카드 등록</td>
+                      <td class="vcol" style="padding: 2%">
+                        (오렌지카드)
+                        <div>
+                          <strong>필수항목</strong> : 오렌지카드번호, 오렌지카드
+                          비밀번호
+                        </div>
+                        (원카드)
+                        <div>
+                          <strong>필수항목</strong> : 신용카드번호, 오렌지카드
+                          비밀번호
+                        </div>
+                      </td>
+                      <td class="vcol tc">
+                        등록 카드 삭제 시 또는 회원탈퇴 시
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc" rowspan="3">포인트 관리</td>
+                      <td class="vcol tc" rowspan="1">
+                        제휴서비스 이용 내역 확인 및 포인트 혜택 지급*
+                      </td>
+                      <td class="vcol" style="padding: 2%">
+                        (티머니)
+                        <div>
+                          이름, 오렌지카드번호, 휴대전화번호, 차량번호,
+                          사업자번호, 주행거리 및 시간, 자주 이용하고 있는
+                          충전소
+                        </div>
+                        (롯데렌터카, 롯데카드)
+                        <div>오렌지카드번호</div>
+                        (SK엠앤서비스㈜)
+                        <div>암호화된 회원번호</div>
+                        (롯데오토리스)
+                        <div>차량번호</div>
+                        (현대차-노란우산공제회 회원)
+                        <div>이름, 휴대폰번호, 생년월일</div>
+                      </td>
+                      <td class="vcol tc">포인트 혜택 지급 5년 후 파기</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc" rowspan="1">
+                        현대차 포터Ⅱ LPG 특화 서비스 제공
+                      </td>
+                      <td class="vcol" style="padding: 2%">
+                        <div>
+                          오렌지카드번호, 카드 비밀번호, 차랑 소유주 이름<br />
+                          차량유종, 차량번호, 차량유형, 제조사, 모델, 연식,
+                          영업용 여부, 법인 명의 여부
+                        </div>
+                      </td>
+                      <td class="vcol tc">회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc" rowspan="1">포인트 선물</td>
+                      <td class="vcol" style="padding: 2%">
+                        <div>
+                          (휴대폰번호 방식)
+                          <div>이름, 수신자의 휴대전화번호</div>
+                          (이메일 방식)
+                          <div>이름, 수신자의 이메일</div>
+                        </div>
+                      </td>
+                      <td class="vcol tc">포인트 혜택 지급 5년 후 파기</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc" rowspan="3">특화 서비스 관리</td>
+                      <td class="vcol tc" rowspan="2">오카pay 서비스</td>
+                      <td class="vcol" style="padding: 2%">
+                        (차량정보)
+                        <div>
+                          <strong>필수항목</strong> : 차량번호, 유종, 차량유형,
+                          충전방향
+                        </div>
+                        <div>
+                          <strong>선택항목</strong> : 차량 제조사, 차량 모델
+                        </div>
+                        (결제카드등록)
+                        <div>
+                          <strong>필수항목</strong> : 결제인증 비밀번호(PIN),
+                          카드정보(카드번호, 유효기간, 비밀번호 앞 2자리,
+                          생년월일)
+                        </div>
+                      </td>
+                      <td class="vcol tc">등록정보 삭제 시 또는 회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td style="padding: 2%">
+                        (위치정보)
+                        <div>
+                          <strong>필수항목</strong> : 위치정보(위도, 경도)
+                        </div>
+                      </td>
+                      <td class="vcol tc" s="">
+                        위치기반서비스 제공 후 즉시 파기
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">가맹점/충전소 찾기</td>
+                      <td class="vcol" style="padding: 2%">
+                        <strong>필수항목</strong> : 위치정보(위도, 경도)
+                      </td>
+                      <td class="vcol tc">위치기반서비스 제공 후 즉시 파기</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc" rowspan="4">이벤트/마케팅 관리</td>
+                      <td class="vcol tc">맞춤형 혜택 제공</td>
+                      <td class="vcol" style="padding: 2%">
+                        <strong>선택항목</strong> : 휴대전화번호, 성별, 주소,
+                        자택전화번호, 결혼기념일, 차량정보(차량유종, 차량번호,
+                        차량유형, 제조자, 모델, 연식)
+                      </td>
+                      <td class="vcol tc">동의 철회 시 또는 회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">혜택/이벤트 정보 전송</td>
+                      <td class="vcol" style="padding: 2%">
+                        <strong>선택항목</strong> : 채널광고 수신 동의(이메일,
+                        SMS, APP PUSH, 카카오 알림톡/친구톡)
+                      </td>
+                      <td class="vcol tc">동의 철회 시 또는 회원탈퇴 시</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc" rowspan="2">이벤트/프로모션 참여</td>
+                      <td class="vcol" style="padding: 2%">
+                        (이벤트 응모)
+                        <div>이벤트 응모 시 입력한 정보</div>
+                        (경품배송)
+                        <div>
+                          <strong>필수항목</strong> : 주소, 수취인 이름, 수취인
+                          전화번호
+                        </div>
+                      </td>
+                      <td class="vcol tc">이벤트 목적 달성 시</td>
+                    </tr>
+
+                    <tr>
+                      <td td="" class="vcol" style="padding: 2%">
+                        (제세공과금 처리)
+                        <div><strong>필수항목</strong> : 주민등록번호</div>
+                      </td>
+                      <td class="vcol tc">5년</td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc" rowspan="2">상담 관리</td>
+                      <td class="vcol tc">고객센터 유선 상담</td>
+                      <td class="vcol" style="padding: 2%">
+                        (유선 상담)
+                        <div><strong>필수항목</strong> : 녹취파일</div>
+                        (개인택시전환)
+                        <div><strong>필수항목</strong> : 택시운전자격증명</div>
+                        (티티트럭회원전환)
+                        <div>
+                          <strong>필수항목</strong> : 자동차등록증,
+                          차량정보(차량유종, 차량번호, 차량유형, 제조자, 모델,
+                          연식, 영업용 여부, 법인 명의 여부)
+                        </div>
+                        (포인트 상속)
+                        <div>
+                          <strong>필수항목</strong> : 가족관계증명서,
+                          주민등록증(주민등록번호 앞 7자리외 마스킹)
+                        </div>
+                      </td>
+                      <td class="vcol tc">
+                        3년 (증빙서류의 경우 승인 즉시 파기)
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="vcol tc">고객센터 채팅 상담</td>
+                      <td class="vcol" style="padding: 2%">
+                        (회원)
+                        <div><strong>필수항목</strong> : 회원번호</div>
+                        (비회원)
+                        <div>
+                          <strong>필수항목</strong> : 이름, 휴대전화번호
+                        </div>
+                      </td>
+                      <td class="vcol tc">3년</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="padding-top: 15px; text-indent: -3px">
+                  ※ 제세공과금 처리를 위한 주민등록번호의 경우, 소득세법
+                  제145조(원천징수영수증 발급)에 의거하여 수집하고 있습니다.
+                </p>
+              </div>
+            </li>
+
+            <!-- default_input -->
+            <li class="sub-dep1">
+              2. 수집하는 개인정보는 서비스 제공에 필요한 최소한의 정보만으로
+              한정되며, 회원님의 기본적 인권을 침해할 우려가 있는 민감한
+              개인정보(인종, 종교, 사상, 출신지, 본적지, 정치적 성향 및
+              범죄기록, 건강상태 및 성생활 등)는 수집하지 않습니다.
+            </li>
+            <li class="sub-dep1">
+              3. 서비스 이용 과정에서 IP 주소, 쿠키, 서비스 이용 기록, 단말기
+              정보(OS종류 및 버전, 오렌지카드 앱 버전), 위치정보가 생성되어
+              수집될 수 있습니다.
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_12.png"
+            alt="개인정보 처리목적"
+          />제2조 개인정보 처리목적
+        </dt>
+        <dd class="sub-dep1">
+          회사는 개인정보를 다음의 목적을 위해 처리합니다. 처리한 개인정보는
+          다음의 목적 이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는
+          사전동의를 구할 예정입니다.
+          <ul class="mt10">
+            <li class="sub-dep2">
+              ① 회원제 서비스 이용에 따른 본인 확인 및 가입자 식별, 불량회원의
+              서비스 부정 이용 방지, 포인트 적립 및 사용, 오렌지카드 등록,
+              제휴서비스 이용에 따른 포인트 지급, 오카pay 서비스 제공, 고객
+              상담의 목적으로 이용
+            </li>
+            <li class="sub-dep2">
+              ② 서비스 제공에 관한 계약 이행을 위한 연락 및 안내, 영수증 및
+              청구서 송부, 배송 진행 상황의 통보, 고지사항 전달, 본인 의사 확인,
+              불만 처리 외<br />당사의 상품/서비스에 대한 홍보, 광고, 회원님에
+              대한 사은행사, 판촉행사 및 혜택 제공, 이벤트 정보 안내 목적에 이용
+            </li>
+            <li class="sub-dep2">
+              ③ 회원의 서비스 이용에 대한 통계, 개인맞춤 서비스 제공을 위한
+              자료, 제휴서비스 연계시 이용하는 자료로서 활용
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">제3조 개인정보의 수집방법</dt>
+        <dd class="sub-dep1">
+          회사는 회사가 운영하는 홈페이지, 모바일앱, 챗봇 및 고객센터 등을 통한
+          회원가입, 오카pay 서비스 이용, 이벤트/프로모션 참여, 고객센터 유선 및
+          채팅 상담 등을 통해 개인정보를 수집합니다. 또한, 회사는 제휴사를
+          통하여서도 개인정보를 수집합니다.
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_18.png"
+            alt="개인정보의 제3자 제공"
+          />제4조 개인정보의 제3자 제공에 관한 사항
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회원님으로부터 수집한 개인정보는‘제2조 개인정보 처리목적’에서
+              고지한 범위 내에서만 사용하며, 회원님의 동의 없이는 동 범위를
+              초과하여 이용하거나 제3자에게 제공하지 않습니다.
+            </li>
+            <li class="sub-dep1">
+              2. 그러나, 보다 나은 서비스의 제공을 위하여 개인정보를 제휴사 등
+              제3자에게 제공(열람할 수 있도록 허용하는 것과 공유도 포함)할
+              필요가 있는 경우, 제공받는 자의 성명(법인의 경우 법인 명칭), 제공
+              정보의 항목, 제공정보의 이용 목적, 보유 및 이용기간 등을 명시하여
+              회원님께 동의를 구하는 절차를 거치게 되며, 동의하지 않는 경우에는
+              제3자에게 제공하지 않습니다.<br />
+              다만, 아래의 경우는 예외로 합니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">① 회원님들이 사전에 동의한 경우</li>
+                <li class="sub-dep2">② 다른 법률에 특별한 규정이 있는 경우</li>
+                <li class="sub-dep2">
+                  ③ 명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의
+                  이익을 위하여 필요하다고 인정되는 경우
+                </li>
+                <li class="sub-dep2">
+                  ④ 공중위생 등 공공의 안전과 안녕을 위하여 긴급히 필요한 경우
+                </li>
+                <li class="sub-dep2">⑤ 요금 정산을 위하여 필요한 경우</li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              3. E1오렌지카드 서비스를 이용하기 위하여 제3자에게 제공하는
+              현황입니다. 즉 아래 서비스를 이용하지 않는 이용자는 개인정보
+              제공이 발생하지 않습니다. 이용자가 서비스를 이용하기 위하여
+              자발적으로 자신의 개인정보를 제3자에게 제공하는 경우이며, 이
+              때에도 회사는 이용자에게 ‘개인정보를 제공받는 자, 제공목적,
+              제공하는 개인정보 항목, 제공받는 개인정보의 보유 및 이용기간’을
+              사전에 고지하고 이에 대해 명시적·개별적 동의를 얻습니다.
+              <div class="table-terms mt10">
+                <table class="table" style="margin: 10px 0">
+                  <caption>
+                    E1오렌지카드 서비스를 이용하기 위하여 제3자에게 제공하는
+                    현황을 안내하는 테이블입니다.
+                  </caption>
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 25%" />
+                    <col style="width: 25%" />
+                    <col style="width: 30%" />
+                  </colgroup>
+                  <thead>
+                    <tr class="first">
+                      <th>제공<br />받는자</th>
+                      <th>제공하는<br />개인정보 항목</th>
+                      <th>제공목적</th>
+                      <th>
+                        개인정보를 제공받는 자의<br />개인정보 보유 및 이용기간
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tc">하나카드㈜</td>
+                      <td class="tc">암호화된 동일인<br />식별정보(CI)</td>
+                      <td class="tc" style="padding: 2%; line-height: 22px">
+                        하나멤버스 회원 가입 여부 확인, 하나머니 조회 및 전환
+                      </td>
+                      <td class="tc">회원 탈퇴 시</td>
+                    </tr>
+                    <tr>
+                      <td class="tc">에이치디씨아이파크몰㈜</td>
+                      <td class="tc" style="padding: 2%; line-height: 22px">
+                        암호화된 회원번호, 회원명,<br />오렌지카드번호
+                      </td>
+                      <td class="tc" style="padding: 2%; line-height: 22px">
+                        포인트를 활용한 물품 구매
+                      </td>
+                      <td class="tc">5년<br />(미구매 시 1년)</td>
+                    </tr>
+                    <tr>
+                      <td class="tc">SK플래닛㈜</td>
+                      <td class="tc">오렌지카드 번호</td>
+                      <td class="tc" style="padding: 2%; line-height: 22px">
+                        Syrup 멤버십 카드에<br />오렌지카드 추가, 포인트 조회
+                      </td>
+                      <td class="tc">회원 탈퇴 시 또는 동의 철회 시 까지</td>
+                    </tr>
+                    <tr>
+                      <td class="tc">SK엠앤서비스㈜</td>
+                      <td class="tc" style="padding: 2%; line-height: 22px">
+                        암호화된 회원번호
+                      </td>
+                      <td class="tc">특화 제휴 서비스 제공</td>
+                      <td class="tc" rowspan="5">5년</td>
+                    </tr>
+                    <tr>
+                      <td class="tc">㈜케이티알파</td>
+                      <td class="tc" style="padding: 2%; line-height: 22px">
+                        회원명, 발신자 번호, 수신자 번호
+                      </td>
+                      <td class="tc" style="padding: 2%; line-height: 22px">
+                        포인트 쿠폰 구매
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc">롯데카드㈜</td>
+                      <td class="tc" style="padding: 2%; line-height: 22px">
+                        오렌지카드 번호
+                      </td>
+                      <td class="tc">포인트 이용 내역 정산</td>
+                    </tr>
+
+                    <tr>
+                      <td class="tc">씨제이씨지브이㈜</td>
+                      <td class="tc" rowspan="2" style="padding: 2%">
+                        회원번호, 승인일시, 승인일자,
+                        카드번호(마스킹)/오렌지카드번호
+                      </td>
+                      <td class="tc">포인트 이용 내역 정산</td>
+                    </tr>
+
+                    <tr>
+                      <td class="tc">㈜알라딘 커뮤니케이션</td>
+                      <td class="tc">포인트 사용 및 전환</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_19.png"
+            alt="개인정보 처리업무 위탁"
+          />제5조 개인정보 위탁관리
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회사는 회원님에 대한 서비스의 유지 및 관리, 고객상담, 기타
+              서비스 안내를 위하여 아래와 같은 전문용역 업체에 일부 개인정보
+              처리업무를 위탁하여 운영하고 있습니다.
+              <div class="table-terms mt10">
+                <table class="table" style="margin: 10px 0">
+                  <caption>
+                    개인정보를 위탁관리하는 업체와 위탁업무내용, 처리하는 정보를
+                    안내하는 테이블입니다.
+                  </caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col style="width: 35%" />
+                    <col style="width: 35%" />
+                  </colgroup>
+                  <thead>
+                    <tr class="first">
+                      <th>수탁자</th>
+                      <th>위탁내용</th>
+                      <th>위탁기간</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tc" rowspan="2">㈜스마트로</td>
+                      <td style="padding: 2%; line-height: 22px">
+                        각종 정보의 전산처리 및 전산시스템의 개발, 유지 관리
+                      </td>
+                      <td class="tc" rowspan="15">계약 종료 시까지</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2%; line-height: 22px">
+                        스마트 결제(오카Pay) 서비스(재위탁:㈜파이온즈)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc">퀸텟시스템즈㈜</td>
+                      <td style="padding: 2%; line-height: 22px">
+                        각종 정보의 전산처리 및 전산시스템의 개발, 유지 관리
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc" rowspan="4">㈜세림SC</td>
+                      <td style="padding: 2%; line-height: 22px">
+                        고객상담센터 운영
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2%; line-height: 22px">
+                        상담원 채팅 서비스(재위탁:엠비아이솔루션㈜)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2%; line-height: 22px">
+                        이벤트 대행
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2%; line-height: 22px">
+                        이벤트 경품 배송(재위탁 : 로젠택배)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc">SCI평가정보㈜</td>
+                      <td style="padding: 2%; line-height: 22px">
+                        가입인증(본인확인) 및 회원정보확인 서비스 대행
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc">㈜엘지씨엔에스</td>
+                      <td style="padding: 2%; line-height: 22px">
+                        카카오톡 친구톡/알림톡 서비스
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc">㈜비지에프네트웍스</td>
+                      <td style="padding: 2%; line-height: 22px">SMS 발송</td>
+                    </tr>
+                    <tr>
+                      <td class="tc" rowspan="2">㈜LG유플러스</td>
+                      <td style="padding: 2%; line-height: 22px">SMS 발송</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 2%; line-height: 22px">
+                        IDC인프라서비스(재위탁: ㈜유호스트)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc">㈜메이크봇</td>
+                      <td style="padding: 2%; line-height: 22px">
+                        챗봇 고객센터 서비스
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc">주식회사 키스소프트</td>
+                      <td style="padding: 2%; line-height: 22px">
+                        PUSH 알림 발송
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tc">주식회사 보다컴</td>
+                      <td style="padding: 2%; line-height: 22px">
+                        고객센터 녹취시스템 관리
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+
+            <!-- default_input -->
+            <li class="sub-dep1">
+              2. 회사는 업체 및 위탁하는 업무의 내용이 변경될 경우, 홈페이지
+              공지사항(또는 개인정보처리방침)을 통하여 알려드리겠습니다.
+            </li>
+            <li class="sub-dep1">
+              3. 회사는 위탁계약 체결 시 개인정보 보호법 제26조에 따라 위탁업무
+              수행목적 외 개인정보 처리금지, 기술적·관리적 보호조치, 재위탁
+              제한, 수탁자에 대한 관리·감독, 손해배상 등 책임에 관한 사항을
+              계약서 등 문서에 명시하고, 수탁자가 개인정보를 안전하게
+              처리하는지를 감독하고 있습니다.
+            </li>
+            <li class="sub-dep1">
+              4. 회사로부터 개인정보를 위탁 받은 업체는 자신의 고의 또는 과실로
+              인하여 회사나 회사의 회원님께 손해를 끼쳤을 경우 그에 대한 모든
+              책임을 부담합니다.
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">제6조 링크사이트</dt>
+        <dd class="sub-dep1">
+          회사는 귀하께 다른 회사의 웹사이트 또는 자료에 대한 링크를 제공할 수
+          있습니다. 이 경우 회사는 외부사이트 및 자료에 대한 아무런 통제권이
+          없으므로 그로부터 제공받는 서비스나 자료의 유용성에 대해 책임질 수
+          없으며 보증할 수 없습니다. 회사가 포함하고 있는 링크를 클릭(click)하여
+          타 사이트(site)의 페이지로 옮겨갈 경우 해당 사이트의 개인정보
+          처리방침은 회사와 무관하므로 새로 방문한 사이트의 정책을 검토해 보시기
+          바랍니다.
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">제7조 광고성 정보 전송</dt>
+        <dd>
+          <ol class="agreeul">
+            <li class="sub-dep1">
+              1. 회사는 귀하의 명시적인 사전 수신동의를 받아 영리목적의 광고성
+              정보를 전송합니다.
+            </li>
+            <li class="sub-dep1 mb10">
+              2. 회사는 귀하가 뉴스레터, 상품정보 안내 등 온라인 마케팅을 위한
+              전자우편 전송에 대한 동의를 한 경우 전자우편의 제목란 및 본문란에
+              다음 사항과 같이 귀하가 쉽게 알아 볼 수 있도록 조치합니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  ① <strong>전자우편의 제목란</strong> : (광고)라는 문구를
+                  제목란의 처음에 빈칸없이 한글로 표시하고 이어서 전자우편
+                  본문란의 주요 내용을 표시합니다.
+                </li>
+                <li class="sub-dep2">
+                  ② <strong>전자우편의 본문란</strong> :
+                  <ul class="mb10">
+                    <li class="sub-dep2 sub-list1">
+                      귀하가 수신거부 또는 수신동의에 대한 철회 의사표시를 할 수
+                      있는 전송자의 명칭, 전자우편주소, 전화 번호 및 주소를
+                      명시합니다.
+                    </li>
+                    <li class="sub-dep2 sub-list1">
+                      귀하가 수신거부 또는 수신동의에 대한 철회 의사표시를 쉽게
+                      표시할 수 있는 방법을 한글 및 영문으로 각각 명시합니다.
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-dep2">
+                  ③ 음성 이외의 형태로 영리목적의 광고성 정보를 전송하는
+                  경우에는 광고성 정보가 시작되는 부분에 (광고), 전송자의 명칭,
+                  전화번호 또는 주소(팩스의 경우 전화번호 및 주소)를 명시하도록
+                  조치합니다. 또한 귀하가 수신거부 또는 수신동의의 철회
+                  의사표시를 쉽게 표시할 수 있는 방법을 명시합니다.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_20.png"
+            alt="개인정보의 보유 기간"
+          />제8조 개인정보의 처리 및 보유 기간
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회사는 원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는
+              해당 정보를 지체없이 파기합니다.
+            </li>
+            <li class="sub-dep1">
+              2. 단, 상법 등 관련 법령의 규정에 의하여 보유할 필요가 있거나,
+              거래 관련 권리의무관계의 확인 등의 이유로 회원님의 개인정보를 더
+              보존할 필요성이 있는 경우에는 관련 법령에서 규정한 보존기간 또는
+              아래에서 정한 기간동안 거래내역과 최소한의 기본정보를 보유할 수
+              있습니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  ① <strong>계약 또는 청약철회 등에 관한 기록</strong> : 계약
+                  또는 청약 철회 시로부터 5년(전자상거래 등에서의 소비자보호에
+                  관한 법률 시행령 제6조)
+                </li>
+                <li class="sub-dep2">
+                  ② <strong>회원의 불만 또는 분쟁처리에 관한 기록</strong> :
+                  불만 또는 분쟁 처리 시로부터 3년 (전자상거래 등에서의
+                  소비자보호에 관한 법률 시행령 제6조)
+                </li>
+                <li class="sub-dep2">
+                  ③
+                  <strong
+                    >상업장부와 영업에 관한 중요 서류에 포함된 개인정보</strong
+                  >
+                  : 10년 (상법 제33조)
+                </li>
+                <li class="sub-dep2">
+                  ④
+                  <strong>전표 또는 이와 유사한 서류에 포함된 개인정보</strong>
+                  : 5년 (상법 제33조)
+                </li>
+                <li class="sub-dep2">
+                  ⑤ <strong>대금결제 및 재화 등의 공급에 관한 기록</strong> :
+                  공급 시로부터 5년 (전자상거래 등에서의 소비자보호에 관한 법률
+                  시행령 제6조)
+                </li>
+                <li class="sub-dep2">
+                  ⑥ <strong>표시/광고에 관한 기록</strong> : 6개월 (전자상거래
+                  등에서의 소비자보호에 관한 법률 시행령 제6조)
+                </li>
+                <li class="sub-dep2">
+                  ⑦ <strong>로그 및 접속지 정보 등 통신사실확인자료</strong> :
+                  3개월 이상 (통신비밀보호법 제15조의2)
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_22.png"
+            alt="개인정보의 파기절차"
+          />제9조 개인정보의 파기절차 및 방법
+        </dt>
+        <dd>
+          <ul>
+            <li class="sub-dep1">
+              회사는 원칙적으로 수집한 개인정보의 이용목적이 달성된 후 또는
+              개인정보의 보유 및 이용 기간이 종료된 후에는 해당 정보를 지체 없이
+              파기합니다.<br />파기절차 및 방법은 다음과 같습니다.
+              <ul class="mt10">
+                <li class="sub-dep2">
+                  ① <strong>파기절차</strong> : 회원님이 서비스 가입 등을 위해
+                  입력하신 개인정보는 수집 및 이용 목적이 달성된 후 내부 방침 및
+                  기타 관련 법령에 의한 정보보호 사유(보유 및 이용기간 참조)에
+                  따라 일정기간 동안 저장된 후 파기됩니다.
+                </li>
+                <li class="sub-dep2">
+                  ② <strong>파기방법</strong> : 서비스이용 신청서 등 서면양식에
+                  기재하거나 종이에 출력된 개인정보는 분쇄기로 분쇄 또는
+                  소각하거나 화학약품처리를 하여 용해하여 파기하고, 전자적
+                  파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적
+                  방법을 사용하여 삭제합니다.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_33.png"
+            alt="개인정보 열람청구 방법"
+          />제10조 개인정보의 열람 및 정정
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회원님은 언제든지 등록되어 있는 본인의 개인정보를 조회하거나
+              수정하실 수 있으며, 개인정보 수집, 이용, 제공에 대한 동의 철회
+              또는 가입 해지를 요청할 수도 있습니다. 개인정보 조회, 수정,
+              동의철회, 가입 해지는 회사 홈페이지에서 본인 확인 절차를 거치신
+              후, 직접 열람, 정정, 동의 철회, 해지하실 수 있습니다. 또는
+              개인정보보호책임자 또는 개인정보보호담당자에게 서면, 전화 또는
+              이메일로 연락하시면 지체없이 조치하겠습니다.
+            </li>
+            <li class="sub-dep1">
+              2. 회원님이 개인정보의 오류에 대한 정정을 요청하신 경우, 회사는
+              해당 내용에 대한 정정을 완료하기 전까지 당해 개인정보를 이용 또는
+              제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한
+              경우에는 정정 처리결과를 당해 제3자에게 지체없이 통지하여 정정이
+              이루어지도록 하겠습니다.
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">제11조 개인정보의 처리정지</dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회원님은 언제든지 E1에 등록되어 있는 개인정보의 처리정지를
+              요청하실 수 있으며, 회원님이 처리정지 요청 시 E1은 즉시 필요한
+              조치를 취하겠습니다.
+            </li>
+            <li class="sub-dep1">
+              2. 다만, 개인정보보호법에 따라 다음 각항의 경우에는 회원님의
+              처리정지 요구가 거절될 수 있습니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  ① 법률에 특별한 규정이 있거나 법령상 의무를 준수하기 위하여
+                  불가피한 경우
+                </li>
+                <li class="sub-dep2">
+                  ② 다른 사람의 생명, 신체를 해할 우려가 있거나 다른 사람의
+                  재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우
+                </li>
+                <li class="sub-dep2">
+                  ③ 개인정보를 처리하지 않으면 회원님과 약정한 서비스를 제공하지
+                  못하는 등 회원님의 불이익이 예상됨에도 불구하고 회원님의
+                  의사를 명확하게 확인하지 못한 경우
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">제12조 회원탈퇴 절차 및 방법</dt>
+        <dd>
+          <ul>
+            <li class="sub-dep1">
+              1. E1 오렌지카드 온라인 회원 탈퇴
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  PC : 홈페이지 로그인 → 마이페이지 → 회원정보관리 → 회원탈퇴
+                  화면에서 직접 탈퇴
+                </li>
+                <li class="sub-dep2">
+                  앱 : 접속 및 로그인 → 설정 → 회원탈퇴 화면에서 직접 탈퇴
+                </li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              2. 고객센터를 통한 회원 탈퇴
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  E1고객센터 (1688-2121)에 연락하셔서 탈퇴하실 수 있습니다.
+                </li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              3. E-mail통지를 통한 회원 탈퇴
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">orangecard@e1.co.kr로 회원탈퇴 신청</li>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_28.png"
+            alt="법정대리인의 권리와 의무"
+          />제13조 만 14세 미만 아동의 개인정보보호
+        </dt>
+        <dd class="sub-dep1">
+          회사는 만 14세미만 아동의 개인정보 보호를 위하여 만 14세 이상의
+          이용자에 한하여 회원가입을 허용합니다.
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_14.png"
+            alt="개인정보의 자동 수집 장치 설치,운영"
+          />제14조 쿠키에 의한 개인정보 수집
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회사는 회원님의 정보를 수시로 저장하고 찾아내는
+              "쿠키(cookie)"를 운용합니다. 쿠키란 귀사의 웹사이트를 운용하는데
+              이용되는 서버가 회원님의 컴퓨터 브라우저(넷스케이프,
+              인터넷익스플로러 등)로 전송하는 소량의 정보(아주 작은 텍스트
+              파일)로서 회원님의 컴퓨터 하드디스크에 저장됩니다. 회원님이
+              웹사이트에 로그인(log-in)하면 E1orangecard.com의 서버는 회원님의
+              브라우저에 있는 쿠키의 내용을 읽고, 회원님의 추가정보를 회원님의
+              컴퓨터에서 찾아 서비스를 제공하게 됩니다. 이러한 쿠키 정보는
+              회원님께 보다 유용하고 편리한 맞춤 서비스를 제공하기 위해
+              사용됩니다.
+            </li>
+            <li class="sub-dep1">
+              2. 이러한 쿠키의 사용여부에 대하여 회원님께서 선택할 수 있습니다.
+              웹 브라우저의 옵션 설정을 통해 모든 쿠키를 허용하거나 쿠키를
+              저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수도
+              있습니다. 단, 회원님이 쿠키의 저장을 거부할 경우에는 로그인이
+              필요한 일부 서비스 제공에 어려움이 있을 수 있습니다.
+            </li>
+            <li class="sub-dep1">
+              3. 쿠키 설정 거부 방법은 다음과 같습니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  ① <strong> 웹 브라우저에서 쿠키 허용/차단</strong><br />
+                  · 크롬(Chrome) : 웹 브라우저 설정 &gt; 개인정보 보호 및 보안
+                  &gt; 인터넷 사용 기록 삭제<br />
+                  · 엣지(Edge) : 웹 브라우저 설정 &gt; 쿠키 및 사이트 권한 &gt;
+                  쿠키 및 사이트 데이터 관리 및 삭제
+                </li>
+
+                <li class="sub-dep2">
+                  ② <strong>모바일 브라우저에서 쿠키 허용/차단</strong><br />
+                  · 크롬(Chrome) : 모바일 브라우저 설정 &gt; 개인정보 보호 및
+                  보안 &gt; 인터넷 사용 기록 삭제<br />
+                  · 사파리(Safari) : 모바일 기기 설정 &gt; 사파리(Safari) &gt;
+                  고급 &gt; 모든 쿠키 차단<br />
+                  · 삼성 인터넷 : 모바일 브라우저 설정 &gt; 인터넷 사용 기록
+                  &gt; 인터넷 사용 기록 삭제<br />
+                </li>
+
+                <li class="sub-dep2">
+                  이 외에도 Firefox, Opera 등 주요 인터넷 웹브라우저들도 쿠키
+                  삭제 기능을 제공하고 있습니다.
+                </li>
+              </ul>
+            </li>
+
+            <li class="sub-dep1">
+              [행태정보의 수집·이용 및 거부 등에 관한 사항]
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  1. 회사는 서비스 이용과정에서 회원의 웹사이트 사용과 연관된
+                  부가적 서비스 등을 제공하기 위해 행태정보를 수집·이용하고
+                  있습니다.
+                </li>
+                <li class="sub-dep2">
+                  2. 회사는 행태정보 수집을 위해 구글(Google)에서 제공하는
+                  웹로그 분석 도구인 ‘구글 애널리틱스’를 이용하고 있습니다. 이
+                  경우 회원 개인을 식별할 수 없는 형태로 수집됩니다.
+                </li>
+                <li class="sub-dep2">
+                  3. 회사는 최적화된 맞춤형 서비스 등에 필요한 최소한의
+                  행태정보만을 수집하며, 사상, 신념, 학력・병력 등 개인의
+                  권리・이익이나 사생활을 침해할 우려가 있는 민감한 행태정보를
+                  수집하지 않습니다.
+                </li>
+                <li class="sub-dep2">
+                  4. 회사는 웹 브라우저 쿠키 설정 변경 및 모바일 단말기의 설정
+                  변경을 통해 구글 애널리틱스의 쿠키 이용을 거부할 수 있습니다.
+                  다만, 쿠키 설정 변경은 웹 브라우저 자동로그인 등 일부 서비스의
+                  이용이 제한될 수 있습니다.<br />
+                  ① 웹 브라우저의쿠키 설정 변경<br />
+                  · 크롬(Chrome) : 웹 브라우저 설정 &gt; 개인정보 보호 및 보안
+                  &gt; 인터넷 사용 기록 삭제 및 서드파티쿠키 차단<br />
+                  · 엣지(Edge) : 웹 브라우저 설정 &gt; 개인정보, 검색 및 서비스
+                  &gt; 추적방지 &gt; InPrivate를 검색할 때 항상 “엄격” 추적 방지
+                  사용<br />
+                  ② 모바일 단말기의 설정 변경<br />
+                  · 안드로이드(Android) : 설정 &gt; 보안 및 개인정보 보호 &gt;
+                  개인정보 보호 &gt; 기타 개인정보 설정 &gt; 광고 &gt; 광고ID
+                  재설정 또는 광고ID 삭제<br />
+                  · 아이폰(IOS) : 설정 &gt; 개인정보 보호 및 보안 &gt; 추적 &gt;
+                  앱 추적 허용 해제<br />
+                  ※ 모바일 OS 버전에 따라 메뉴 및 방법이 다소 상이할 수
+                  있습니다.
+                </li>
+                <li class="sub-dep2">
+                  5. 회원은 개인정보 보호 담당부서에서 행태정보와 관련하여
+                  궁금한 사항이나 거부권 행사, 피해 신고 접수 등을 문의하실 수
+                  있습니다.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_05.png"
+            alt="개인위치정보"
+          />제15조 개인위치정보의 처리
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              회사는 위치정보의 보호 및 이용 등에 관한 법률(이하 ‘위치정보법’)에
+              따라 다음과 같이 개인위치정보를 처리합니다.
+            </li>
+            <li class="sub-dep1">
+              1. 회사의 위치기반 서비스 이용약관 제4조에 따른 서비스의 제공을
+              위해 개인위치정보를 보유할 수 있으며 회원에게 위치기반서비스 제공
+              후 즉시 파기합니다. 파기절차 및 파기방법은 ‘제9조 개인정보의
+              파기절차 및 방법’을 준용합니다.
+            </li>
+            <li class="sub-dep1">
+              2. 회사는 위치정보법 제16조 제2항에 따라 회원의 위치정보
+              이용ㆍ제공사실 확인자료를 자동 기록ㆍ보존하며, 해당 자료는 1년간
+              보관합니다.
+            </li>
+            <li class="sub-dep1">
+              3. 회사는 개인위치정보를 이용하여 서비스를 제공하고자 하는
+              경우에는 미리 회사의 이용약관에 명시한 후 개인위치정보주체의
+              동의를 얻습니다. 회사의 개인위치정보를 회원이 지정하는 제3자에게
+              제공하는 경우에는 개인위치정보를 수집한 당해 통신 단말장치로 매회
+              회원에게 제공받는 자, 제공일시 및 제공목적을 즉시 통보합니다. 단,
+              아래에 해당하는 경우에는 회원이 미리 특정하여 지정한 통신 단말장치
+              또는 전자우편주소로 통보합니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  ① 개인위치정보를 수집한 당해 통신단말장치가 문자, 음성 또는
+                  영상의 수신기능을 갖추지 아니한 경우
+                </li>
+                <li class="sub-dep2">
+                  ② 회원이 온라인 게시 등의 방법으로 통보할 것을 미리 요청한
+                  경우
+                </li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              4. 만 14세 미만인 자는 회원 가입대상이 아니므로, 회사는 회원가입이
+              불가능한 만 14세 미만인 자의 위치정보를 수집하지 않습니다. 따라서
+              만 14세 미만의 이용자에 대해서는 위치기반서비스와 관련한 민원 발생
+              등에 대해서는 책임을 지지 않습니다.
+            </li>
+            <li class="sub-dep1">
+              5. 위치정보법 제26조(8세 이하의 아동등의 보호를 위한 위치정보
+              이용) 제1항에 따라 아래의 어느 하나에 해당하는 사람(이하 “8세
+              이하의 아동등”이라 한다)의 보호의무자가 8세 이하의 아동등의 생명
+              또는 신체의 보호를 위하여 8세 이하의 아동등의 개인위치정보의
+              수집ㆍ이용 또는 제공에 동의하는 경우에는 본인의 동의가 있는 것으로
+              봅니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">① 8세 이하의 아동</li>
+                <li class="sub-dep2">② 피성년후견인</li>
+                <li class="sub-dep2 mb10">
+                  ③ 장애인복지법 제2조 제2항 제2호에 따른 정신적 장애를 가진
+                  사람으로서 장애인고용촉진 및 직업재활법 제2조 제2호에 따른
+                  중증장애인에 해당하는 사람(장애인복지법 제32조에 따라 장애인
+                  등록을 한 사람만 해당한다)
+                </li>
+                <li class="sub-dep2">
+                  위 권리를 행사하고자 하는 보호의무자는 서면동의서에
+                  보호의무자임을 증명하는 서면을 첨부하여 회사에 제출하여야
+                  하며, 이 경우 보호의무자는 위치기반서비스 이용약관에 따른
+                  회원의 권리를 모두 가집니다.
+                </li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              6. 위치정보를 적절히 관리ㆍ보호하고 개인위치정보주체의 불만을
+              원활히 처리할 수 있도록 위치정보관리책임자 및 관련 부서를 지정하여
+              운영하며 연락처는 ‘제17조 개인정보 보호책임자’ 및 ‘제18조 개인정보
+              관련 불만처리’를 준용합니다.
+            </li>
+            <li class="sub-dep1">
+              그 외 개인위치정보 처리와 관련된 자세한 내용은 회사의 위치기반
+              서비스 이용약관을 참고하시길 바랍니다.
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_24.png"
+            alt="안전성 확보 조치사항"
+          />제16조 개인정보보호를 위한 안전성 확보 대책
+        </dt>
+
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회사는 회원님의 개인정보를 처리함에 있어 개인정보의 분실, 도난,
+              유출, 위조, 변조 또는 훼손을 방지하고 개인정보의 안전성을 확보하기
+              위하여 다음과 같은 조치를 포함한 관련 법령상 필요한 기술적 대책을
+              강구하고 있습니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  ① 회원님의 개인정보는 파일 및 전송 데이터를 암호화하여 혹시
+                  발생할 수 있는 사고 시라도 회원님의 개인정보가 유출등이 되지
+                  않도록 관리되고 있습니다.
+                </li>
+                <li class="sub-dep2">
+                  ② 회원님의 개인정보를 저장하고 처리하는 시스템은 방화벽과
+                  침입탐지시스템을 통하여 보호되며 24시간 감시를 통하여
+                  외부로부터의 위협에 대해 관리되고 있습니다.
+                </li>
+                <li class="sub-dep2">
+                  ③ 회원님의 개인정보를 저장하고 처리하는 시스템은 자동으로
+                  갱신되는 백신프로그램을 이용하여 컴퓨터 바이러스에 의한 피해에
+                  보호되고 있습니다.
+                </li>
+                <li class="sub-dep2">
+                  ④ 회사는 회사 홈페이지에 대한 회원님의 접속 기록의 위조,
+                  변조를 방지하기 위해 적절한 조치를 취합니다.
+                </li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              2. 또한 회사는 회원님의 개인정보를 처리함에 있어 다음과 같은
+              관리적 대책을 강구하고 있습니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">
+                  ① 회원님의 개인정보에 대한 접근권한을 최소한의 인원으로
+                  제한하고 있습니다.
+                </li>
+                <li class="sub-dep2">
+                  ② 임직원이 업무를 함에 있어 회원님의 개인정보를 보호하기 위해
+                  지켜야 할 사내규정을 마련하여 준수하고 있습니다.
+                </li>
+                <li class="sub-dep2">
+                  ③ 임직원이 회원님의 개인정보를 처리하기 이전에 보안서약서를
+                  통하여 회원님의 개인정보에 대한 정보유출을 사전에 방지하고
+                  사내규정에 대한 이행사항 및 준수여부를 감시하기 위한
+                  내부절차를 마련하고 있습니다.
+                </li>
+                <li class="sub-dep2">
+                  ④ 임직원의 개인정보보호 고취를 위한 정기적인 개인정보
+                  보호교육을 실시하고 있습니다.
+                </li>
+                <li class="sub-dep2">
+                  ⑤ 그 외 내부 관리자의 실수나 기술관리 상의 사고로 인해
+                  개인정보의 상실, 유출, 변조, 훼손이 유발될 경우 즉각 회원님께
+                  사실을 알리고 적절한 대책과 보상을 강구할 것입니다.
+                </li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              3. 하지만 근본적으로 개인정보의 보안관리에는 회원님 본인의 노력도
+              중요합니다. 오직 ID(고유번호)와 Password(비밀번호)를 알고 있는
+              본인에게만 개인정보에 접근할 수 있는 권한이 있으며,
+              Password(비밀번호)를 유지하고 관리할 책임 역시도 본인에게
+              있습니다. 반드시 본인만이 알 수 있는 내용으로 Password(비밀번호)를
+              구성해야 하며, 주민번호의 일부 또는 전화번호 등 타인이 쉽게 도용
+              할 수 있는 Password(비밀번호)의 사용을 지양해야 합니다. 또한
+              공동으로 사용하는 PC에서 저희 서비스에 접속하여 로그온 한 상태에서
+              다른 사이트로 이동할 경우, 혹은 서비스 이용을 종료하였을 경우에는
+              반드시 해당 브라우저를 종료하시기 바랍니다. 그렇지 않을 경우, 해당
+              브라우저를 통해 ID(고유번호), Password(비밀번호), 개인식별정보가
+              포함된 회원님의 정보가 타인에게 손쉽게 유출될 위험이 있습니다.
+            </li>
+            <li class="sub-dep1">
+              4. 회사는 회사의 고의 또는 중과실이 없는 한 회원님 개인의 실수나
+              기본적인 인터넷의 위험성 때문에 일어나는 일들에 대해 책임을
+              부담하지 않습니다.
+            </li>
+            <li class="sub-dep1">
+              5. 개인정보 유출 등 통지<br />
+              회사는 개인정보보호를 위한 기술적, 관리적 대책 등 회원님의
+              개인정보를 최선을 다해 관리하고 있습니다만, 해커의 침입 등
+              예상하지 못한 사유로 인하여 개인정보가 유출 등이 되었음을 알게
+              되었을 때에는 서면, e-mail, FAX, 전화, 휴대전화 문자 전송 또는
+              이와 유사한 방법을 통해 지체없이 회원님께 다음 사항을
+              알리겠습니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">① 유출 등이 된 개인정보의 항목</li>
+                <li class="sub-dep2">② 유출 등이 된 시점과 그 경위</li>
+                <li class="sub-dep2">
+                  ③ 유출 등으로 인한 피해를 최소화하기 위해 회원님께서 할 수
+                  있는 방법 등에 관한 정보
+                </li>
+                <li class="sub-dep2">④ E1의 대응조치 및 피해구제절차</li>
+                <li class="sub-dep2">
+                  ⑤ 회원님에게 피해가 발생한 경우 신고 등을 접수할 수 있는
+                  담당부서 및 연락처
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_29.png"
+            alt="개인정보 보호팩임자 지정 및 현황"
+          />제17조 개인정보 보호책임자/위치정보관리책임자
+        </dt>
+        <dd>
+          <ul class="mb15">
+            <li class="sub-dep1">
+              회원님의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기
+              위하여 회사는 개인정보 보호책임자를 두고 있습니다. 개인정보와
+              관련된 문의사항이 있으시면 아래의 개인정보 보호책임자에게 연락
+              주시기 바랍니다. 문의하신 사항에 대해서 신속하고 성실하게
+              답변해드리겠습니다.
+            </li>
+          </ul>
+          <ul class="mb15">
+            <li class="sub-dep2">
+              <strong>개인정보 보호책임자/위치정보관리책임자</strong>
+            </li>
+            <li class="sub-dep2 sub-list1">성명 : 한상훈</li>
+            <li class="sub-dep2 sub-list1">소속 : 경영기획본부</li>
+            <li class="sub-dep2 sub-list1">직책 : 본부장</li>
+            <li class="sub-dep2 sub-list1">전화번호 : 02-3441-4265</li>
+            <li class="sub-dep2 sub-list1">E-mail : security@e1.co.kr</li>
+          </ul>
+
+          <div class="table-terms mt10">
+            <table class="table" style="margin: 10px 0">
+              <caption>
+                개인정보의 분야별 책임자 및 담당자를 안내하는 테이블입니다.
+              </caption>
+              <colgroup>
+                <col style="width: 20%" />
+                <col style="width: 40%" />
+                <col style="width: 40%" />
+              </colgroup>
+              <thead>
+                <tr class="first">
+                  <th>구분</th>
+                  <th>개인정보 분야별 책임자</th>
+                  <th>개인정보 분야별 담당자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tc">전사 총괄</td>
+                  <td class="vcol" style="padding: 2%">
+                    성명 : 박계홍<br />소속 : 정보기술팀<br />직책 : 팀장
+                  </td>
+                  <td class="vcol" style="padding: 2%">
+                    성명 : 강희석<br />소속 : 정보기술팀<br />직급 : 매니저<br />전화번호
+                    : 02-3441-4265<br />E-mail : security@e1.co.kr
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tc">오렌지카드 담당</td>
+                  <td class="vcol" style="padding: 2%">
+                    성명 : 박완기<br />소속 : 마케팅팀<br />직책 : 팀장
+                  </td>
+                  <td class="vcol" style="padding: 2%">
+                    성명 : 박석영<br />소속 : 마케팅팀<br />직급 : 매니저
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- default_input -->
+          <p class="sub-desc terms">
+            ※ ID/Password 등의 일반적인 문의는 고객센터(1688 - 2121)로 문의하여
+            주시기 바랍니다.
+          </p>
+        </dd>
+      </dl>
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_31.png"
+            alt="고충사항 처리 부서"
+          />제18조 개인정보 관련 불만처리
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 회원님(또는 타인의 권리가 침해된 경우 침해받은 자)은 회사에
+              대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수
+              있습니다.
+              <ul class="mt10 pl20">
+                <li class="sub-dep2">① 개인정보 열람요구</li>
+                <li class="sub-dep2">② 오류 등이 있을 경우 정정 요구</li>
+                <li class="sub-dep2">③ 삭제 요구</li>
+                <li class="sub-dep2">④ 처리정지 및 철회 요구</li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              2. 제1항에 따른 권리 행사는 회사에 대해 개인정보 처리 방법에 관한
+              고시 별지 제8호 서식에 따라 서면, 전자우편, 모사전송(FAX) 등을
+              통하여 하실 수 있으며 회사는 이에 대해 지체 없이 조치하겠습니다.
+            </li>
+            <li class="sub-dep1">
+              3. 정보주체가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한
+              경우에는 회사는 정정 또는 삭제를 완료할 때까지 당해 개인정보를
+              이용하거나 제공하지 않습니다.
+            </li>
+            <li class="sub-dep1">
+              4. 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은
+              자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 처리
+              방법에 관한 고시 별지 제11호 서식에 따른 위임장을 제출하셔야
+              합니다.
+              <div class="table-terms mt10">
+                <table class="table" style="margin: 10px 0">
+                  <caption>
+                    개인정보 열람청구 접수 및 처리 부서를 안내하는 테이블입니다.
+                  </caption>
+                  <thead>
+                    <tr class="first">
+                      <th>개인정보 열람청구 접수, 처리 부서</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="vcol" style="padding: 2%">
+                        소속 : 정보기술팀<br />성명 : 강희석 매니저<br />연락처
+                        : 02-3441-4265, security@e1.co.kr
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- default_input -->
+            </li>
+            <li class="sub-dep1">
+              5. 회원님의 개인정보 권리행사 요구 거절 시 불복을 위한 이의제기
+              절차는 다음과 같습니다.
+              <ul class="mt10" pl20="">
+                <li class="sub-dep2">
+                  ① 해당 부서에서 열람 등 요구에 대한 연기 또는 거절 시 요구받은
+                  날로부터 10일 이내에 정당한 사유 및 이의제기 방법 등을 통지
+                </li>
+                <li class="sub-dep2">
+                  ② 해당부서에서 회원님의 이의제기 신청 및 접수(서면, 전화,
+                  이메일) 개인정보 담당자가 내용 확인
+                </li>
+                <li class="sub-dep2">
+                  ③ 개인정보 보호책임자가 처리결과에 대해 최종 검토
+                </li>
+                <li class="sub-dep2">
+                  ④ 해당 부서에서 회원님에게 처리결과 통보
+                </li>
+              </ul>
+            </li>
+            <li class="sub-dep1">
+              6. 회사가 이 개인정보 처리방침을 지키지 않는다고 판단되시면, 위
+              개인정보 보호책임자 또는 개인정보 보호담당자에게 알려주십시오.
+              지적하신 문제를 조속히 확인하고 수정이 필요한 경우에는 최대한 빠른
+              시간 내에 조치하도록 노력하겠습니다. 회사는 회원님들의 개인정보와
+              관련하여 회원님 여러분들의 의견을 수렴하고 있으며 불만을 처리하기
+              위하여 모든 절차와 방법을 마련하고 있습니다.
+            </li>
+            <li class="sub-dep1">
+              7. 아래의 기관은 회사와는 별개의 기관으로서, 회사의 자체적인
+              개인정보 불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한
+              도움이 필요하시면 문의하여 주시기 바랍니다.
+              <ul class="pl20">
+                <li class="sub-dep2 mb10">
+                  ①
+                  <strong>개인정보 침해신고센터 (한국인터넷진흥원 운영)</strong>
+                  <ul class="mt5">
+                    <li class="sub-dep2 sub-list1">
+                      <strong>소관업무</strong> : 개인정보 침해사실 신고, 상담
+                      신청
+                    </li>
+                    <li class="sub-dep2 sub-list1">
+                      <strong>홈페이지</strong> : privacy.kisa.or.kr
+                    </li>
+                    <li class="sub-dep2 sub-list1">
+                      <strong>전화</strong> : (국번없이) 118
+                    </li>
+                    <li class="sub-dep2 sub-list1">
+                      <strong>주소</strong> : (58342) 전남 나주시 진흥길
+                      9(빛가람동 301-2) 3층 한국인터넷진흥원 개인정보침해
+                      신고센터
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-dep2 mb10">
+                  ② <strong>개인정보 분쟁조정위원회</strong>
+                  <ul class="mt5">
+                    <li class="sub-dep2 sub-list1">
+                      <strong>소관업무</strong> : 개인정보 분쟁조정신청,
+                      집단분쟁조정 (민사적 해결)
+                    </li>
+                    <li class="sub-dep2 sub-list1">
+                      <strong>홈페이지</strong> : www.privacy.go.kr
+                    </li>
+                    <li class="sub-dep2 sub-list1">
+                      <strong>전화</strong> : 1833-6972
+                    </li>
+                    <li class="sub-dep2 sub-list1">
+                      <strong>주소</strong> : (03171) 서울특별시 종로구
+                      세종대로209 정부서울청사 12층
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-dep2">
+                  ③ <strong>대검찰청</strong> : (국번없이) 1301, (www.spo.go.kr)
+                </li>
+                <li class="sub-dep2">
+                  ④ <strong>경찰청 사이버범죄 신고시스템</strong> : (국번없이)
+                  182 (ecrm.police.go.kr)
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          제 19조 추가적인 이용·제공이 지속적으로 발생 시 판단 기준
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1" style="text-indent: -9px">
+              &nbsp;&nbsp;회사는 「개인정보 보호법」 제15조제3항 또는
+              제17조제4항에 따라 「개인정보 보호법」 시행령 제14조의2에 따른
+              사항을 고려하여 정보주체의 동의 없이 개인정보를 추가적으로
+              이용·제공할 수 있습니다. 정보주체의 동의 없이 추가적인 이용·제공을
+              할 경우 다음과 같은 사항을 고려하겠습니다.<br /><br />
+
+              ① 당초 수집 목적과 관련성이 있는지 여부<br />
+              ② 개인정보를 수집한 정황 또는 처리 관행에 비추어 볼 때 개인정보의
+              추가적인 이용 또는 제공에 대한 예측 가능성이 있는지 여부<br />
+              ③ 정보주체의 이익을 부당하게 침해하는지 여부<br />
+              ④ 가명처리 또는 암호화 등 안전성 확보에 필요한 조치를 하였는지
+              여부<br />
+            </li>
+          </ol>
+        </dd>
+      </dl>
+
+      <dl class="mb40">
+        <dt class="title-dep2 mb15">
+          <img
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/ico_m_25.png"
+            alt="처리방침의 변경"
+          />제20조 정책 변경에 따른 공지
+        </dt>
+        <dd>
+          <ol>
+            <li class="sub-dep1">
+              1. 본 개인정보 처리방침은 홈페이지 첫 화면에 공개함으로써
+              회원님께서 언제나 용이하게 보실 수 있도록 조치하고 있습니다.
+            </li>
+            <li class="sub-dep1">
+              2. 법령 정책 또는 보안기술의 변경에 따라 내용의 추가 삭제 및
+              수정이 있을 시에는 변경되는 개인정보 처리방침을 시행하기 전에
+              홈페이지를 통해 변경이유 및 내용 등을 공지하도록 하겠습니다.
+            </li>
+            <li class="sub-dep1">
+              3. 본 개인정보 처리방침의 내용은 수시로 변경될 수 있으므로
+              사이트를 방문하실 때마다, 이를 확인하시기 바랍니다.
+            </li>
+          </ol>
+          <p class="ttype_3" style="margin-top: 30px">
+            <strong>[부칙]</strong> 1. 본 개인정보처리방침은 2024년 9월 6일부터
+            시행합니다.
+          </p>
+        </dd>
+      </dl>
+      <a class="btn-parent" href="javascript:open_notice()">
+        <div class="parent">
+          <p>2024.07.02 ▶ 2024.09.06 개정안내</p>
+          <img
+            class="icon-chevron-right"
+            alt=""
+            src="https://www.e1orangecard.com/Upload/Notice/termsofservice/icon__chevron_right.svg"
+          />
+        </div>
+      </a>
+    </div>
+  </div>
+</template>
+<style>
+.labeling_box {
+  margin-bottom: 30px;
+}
+.labeling_box > ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.labeling_box > ul > li {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  text-align: center;
+  width: 32.5%;
+  margin-bottom: 1%;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  text-align: center;
+}
+.labeling_box h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+  line-height: 150%;
+  padding: 5px 0;
+}
+.labeling_box img {
+  margin: auto;
+  padding-top: 10px;
+}
+.desc_box {
+  display: flex;
+  text-align: left;
+  background: #f8f8f8;
+  justify-content: center;
+  padding: 8px 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-height: 90px;
+}
+.desc_box ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.desc_box ul li {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+}
+.desc_box ul li::before {
+  content: "";
+  border: 2px solid #666;
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.title-dep2 img {
+  margin-right: 5px;
+}
+
+ol .sub-dep1 {
+  text-indent: -19px;
+  margin-left: 18px;
+}
+.vcol div {
+  line-height: 22px;
+}
+
+.icon-chevron-right {
+  width: 12px;
+  position: relative;
+  height: 12px;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.parent p {
+  position: relative;
+  font-weight: 500;
+  margin: 0;
+  color: #e86600;
+}
+.btn-parent {
+  position: relative;
+  border-radius: 3px;
+  background-color: #fff6ed;
+  border: 2px solid #ffd8b2;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 15px;
+  color: #e86600;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .table-terms {
+    overflow-x: auto;
+  }
+  .table-terms table {
+    width: 100rem;
+  }
+  .labeling_box {
+    margin-bottom: 30px;
+  }
+  .labeling_box > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .labeling_box > ul > li {
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    text-align: center;
+  }
+  .labeling_box h3 {
+    font-weight: 700;
+    font-size: 17px;
+    color: #333;
+    line-height: 150%;
+    padding: 3px 0;
+  }
+  .labeling_box img {
+    margin: auto;
+    padding-top: 5px;
+    width: 50px;
+  }
+  .desc_box {
+    display: flex;
+    text-align: left;
+    background: #f8f8f8;
+    justify-content: center;
+    padding: 8px 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-height: 80px;
+  }
+  .desc_box ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .desc_box ul li {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+  }
+  .desc_box ul li::before {
+    content: "";
+    border: 2px solid #666;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50px;
+    margin-right: 5px;
+  }
+  .title-dep2 img {
+    margin-right: 5px;
+    width: 25px;
+  }
+}
+</style>

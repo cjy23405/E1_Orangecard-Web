@@ -1,0 +1,29 @@
+html,
+body,
+pre,
+button,
+select,
+textarea,
+[type="button"],
+[type="submit"],
+[type="text"],
+[type="password"],
+[type="search"],
+[type="email"],
+[type="url"],
+[type="number"],
+[type="tel"],
+[type="file"],
+[type="date"],
+[type="time"] {
+  font-family: "Pretendard", "맑은고딕", "Malgun Gothic", "돋움", Dotum,
+    "Apple Gothic";
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.e1KeywordMark {
+  color: rgb(230, 99, 0);
+  background-color: transparent;
+  vertical-align: top;
+}

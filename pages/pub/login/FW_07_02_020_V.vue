@@ -1,0 +1,984 @@
+<template>
+  <div>
+    <div
+      class="border-top border-bottom inner mt-[2.8rem] px-8 md:mt-24 md:px-16"
+    >
+      <!-- 전체동의 -->
+      <div class="pb-[2.8rem] pt-16 md:pb-[5.6rem]">
+        <div class="ipt-line">
+          <div class="ipt-item">
+            <checkbox id="chkAll" class="ipt-check"></checkbox>
+            <label for="chkAll" class="font-bold">전체동의</label>
+          </div>
+        </div>
+        <div class="px-[1.6rem] pt-[1.6rem] md:px-16">
+          <ul class="list-dot text-gray-600">
+            <li>
+              전체동의는 필수 및 선택정보에 대한 동의도 포함되어있으며,
+              개별적으로 동의하실 수 있습니다.
+            </li>
+            <li>
+              필수항목에 대한 동의를 거부하실 경우 회원가입이 제한되며,
+              선택항목에 대한 동의는 거부하시더라도 회원가입이 가능합니다.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 약관 -->
+      <div class="border-top py-[2.8rem] md:py-16">
+        <div>
+          <p class="fs-16 font-bold text-gray-700">
+            오렌지카드 서비스 이용 약관<strong
+              class="fs-16 align-baseline font-bold text-primary"
+              >(필수)</strong
+            >
+          </p>
+          <div id="divContentes" class="terms-box data-terms">
+            <h2
+              class="title-dep2 mb30"
+              style="
+                padding: 0px 10px 1px;
+                border-left-width: 7px;
+                border-left-style: solid;
+                border-left-color: #e86600;
+              "
+            >
+              제 1장 총칙
+            </h2>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 1조 목적</dt>
+              <dd class="sub-dep1">
+                본 약관은 E1 오렌지카드 회원이 주식회사E1 (이하 "E1")이 제공하는
+                E1 오렌지카드서비스를 이용함에 있어 E1 오렌지카드회원 및 E1의
+                제반 권리,의무와 관련 절차 등을 규정하는데 그 목적이 있습니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 2조 정의</dt>
+              <dd class="sub-dep1">
+                ① "E1 오렌지카드서비스"(이하 "오렌지서비스")라 함은 E1
+                오렌지카드회원을 위해 E1이 제공하는 서비스로서 그 개요는 본 약관
+                제3조에 기술된 바와 같습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② "E1 오렌지카드"(이하 "오렌지카드")라 함은 E1 오렌지카드 회원이
+                오렌지서비스를 정상적으로 이용할 수 있도록 E1이 승인한
+                카드입니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ "E1 오렌지카드 회원"(이하 “회원”)이라 함은 본 약관 및
+                오렌지카드 개인정보처리방침에 동의하고 오렌지서비스를 이용하는
+                고객을 말합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ④ "E1 오렌지카드제휴사" 및 "E1 오렌지카드가맹점"(이하 통칭하여
+                "제휴가맹점")이라 함은 E1과 오렌지카드가맹점 가입 계약 또는
+                오렌지서비스 제휴 계약을 체결하여 오렌지서비스를 공동으로
+                운영하기로 합의한 업체 또는 업소를 말합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ⑤ "E1 오렌지포인트"(이하 "오렌지포인트")라 함은 회원이
+                오렌지서비스를 이용하기 위하여 취득하는 것으로서 그 취득 및 사용
+                등에 관한 구체적인 사항은 본 약관 제3장에 기술된 바와 같습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ⑥ "가용포인트"라 함은 본 약관 제9조의 기준에 부합하여 회원이
+                E1이 정한 제휴가맹점에서 상품/서비스 구입 시 사용할 수 있는
+                오렌지포인트를 말합니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 3조 오렌지서비스 개요</dt>
+
+              <dd class="sub-dep1">
+                ① E1이 본 약관에 정해진 바에 따라 회원에게 제공하는
+                오렌지서비스는 다음 각 호와 같으며 오렌지서비스를 이용하고자
+                하는 고객은 본 약관에 정해진 제반 절차를 거쳐 회원으로
+                가입하여야 합니다. 단, 개별 서비스의 특성 또는 오렌지포인트의
+                성격에 따라 일부 서비스의 이용조건, 이용범위 등이 제한되거나
+                회원에게 일정한 자격요건이 요구될 수 있으며, 이 경우 E1은 그
+                제한사항 및 자격요건을 회원에게 고지해드립니다.
+                <ul class="mb10">
+                  <li class="sub-desc terms">
+                    <strong class="sub-dep2">적립 서비스</strong><br />
+                    회원은 본 약관에 정해진 바에 따라 제휴가맹점에서
+                    상품/서비스를 구입하면 오렌지포인트를 적립 받을 수 있으며,
+                    E1으로부터 사전 승인을 얻은 경우에는 E1에 현금 기타 일정한
+                    대가를 지불하고 오렌지포인트를 직접 적립 받을 수 있습니다.
+                  </li>
+                  <li class="sub-desc terms">
+                    <strong class="sub-dep2">결제 서비스</strong><br />
+                    회원은 본 약관에 정해진 바에 따라 적립된 오렌지포인트를
+                    사용하여 제휴가맹점에서 상품/서비스를 구입할 수 있습니다.
+                  </li>
+                  <li class="sub-desc terms mb10">
+                    <strong class="sub-dep2">기타</strong><br />
+                    E1은 상기 각 호의 서비스 이외에도 추가적인 서비스를 개발하여
+                    회원에게 제공할 수 있습니다.
+                  </li>
+                </ul>
+              </dd>
+              <dd class="sub-dep1">
+                ② E1은 오렌지서비스의 원활한 제공을 위하여 오렌지서비스
+                홈페이지(www.E1orangecard.com)를 운영하고 있으며, 회원은
+                오렌지서비스 홈페이지에서 제공하는 각종 서비스를 이용할 수
+                있습니다. 단, 오렌지서비스 홈페이지를 이용하고자 하는 회원은
+                이용자 ID 및 Password 지정 등 E1이 정하는 이용자 등록절차를
+                거쳐야 합니다.
+              </dd>
+            </dl>
+            <dl class="mb40">
+              <dt class="title-dep3 mb10">제 4조 약관개정</dt>
+
+              <dd class="sub-dep1">
+                ① E1은 약관의 규제에 관한 법률, 전자금융거래법, 정보통신망
+                이용촉진 및 정보보호 등에 관한 법률, 소비자기본법, 전자상거래
+                등에서의 소비자 보호에 관한 법률 등 관련 법령을 위반하지 않는
+                범위 내에서 본 약관을 수시로 개정할 수 있으며, 약관을 개정하고자
+                할 경우에는 개정된 약관을 적용하고자 하는 날(이하 "효력
+                발생일")로부터 30일 이전에 약관이 개정된다는 사실과 개정된 내용
+                등을 다음 각 호에 규정된 방법 중 1가지 이상의 방법으로 회원에게
+                고지하여 드립니다.
+                <ul class="mb10">
+                  <li class="sub-dep2 sub-list1">
+                    App push, 카카오 알림톡, SMS, E-mail 통보
+                  </li>
+                  <li class="sub-dep2 sub-list1">서면통보</li>
+                  <li class="sub-dep2 sub-list1">
+                    오렌지서비스 홈페이지(www.e1orangecard.com,
+                    www.e1orangecard.co.kr, www.lpg.co.kr) 내 게시
+                  </li>
+                  <li class="sub-dep2 sub-list1">제휴가맹점 내 게시</li>
+                  <li class="sub-dep2 sub-list1">일간지 공고 등의 방법</li>
+                </ul>
+              </dd>
+              <dd class="sub-dep1">
+                ② E1이 App push, 카카오 알림톡, SMS, E-mail 통보 또는 서면통보의
+                방법으로 본 약관이 개정된 사실 및 개정된 내용을 회원에게
+                고지하는 경우에는 E1은 회원이 E1에 기제공한 전화번호, E-mail
+                주소 또는 주소지 중 가장 최근에 제공된 곳으로 통보합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ 본 조의 규정에 의하여 개정된 약관(이하 "개정약관")은
+                원칙적으로 그 효력 발생일로부터 장래를 향하여 유효합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ④ 본 약관의 개정과 관련하여 이의가 있는 회원은 회원탈퇴를 할 수
+                있습니다. 단, 본조 제1항 내지 제 2항에 따라 개정된 약관을
+                고지하고 회원의 의사표시가 없는 경우 동의한 것으로 본다는 뜻을
+                명확하게 고지한 경우, E1의 고지가 있은 후 30일 이내에 회원탈퇴를
+                하지 않은 회원은 개정 약관에 동의한 것으로 봅니다.
+              </dd>
+              <dd class="sub-dep1">
+                ⑤ 본 조의 통지방법 및 통지의 효력은 본 약관의 각 조항에서
+                규정하는 개별적인 또는 전체적인 통지의 경우에 이를 준용합니다.
+              </dd>
+            </dl>
+
+            <h2
+              class="title-dep2 mb30"
+              style="
+                padding: 0px 10px 1px;
+                border-left-width: 7px;
+                border-left-style: solid;
+                border-left-color: #e86600;
+              "
+            >
+              제 2장 회원가입과 E1 오렌지카드
+            </h2>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">
+                제 5조 회원가입 및 오렌지카드 발급
+              </dt>
+              <dd class="sub-dep1">
+                ① 회원으로 가입하고자 하는 고객은 본 약관 및 본 약관과 별도로
+                안내되는 오렌지카드 개인정보처리방침에 대하여 동의를 한 후, E1이
+                정한 회원가입 신청양식에 정해진 사항을 기입하여 가입신청을 하고,
+                E1이 이러한 신청에 대하여 승낙함으로서 가입이 완료됩니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 고객으로부터 오렌지카드 발급 신청이 있는 경우 E1은 자체 기준에
+                따른 심사를 거친 뒤 동 기준을 만족하는 오렌지카드 발급신청
+                고객에게 오렌지카드를 발급하여 드립니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ 본 조 제②항에 정해진 바에 따라 E1은 충전소 또는 제휴가맹점에서
+                회원가입을 신청한 고객에게 즉시 발급을 해 드립니다.
+              </dd>
+
+              <dd class="sub-dep1">
+                ④ 회원은 회원자격을 타인에게 양도하거나 대여 또는 담보의
+                목적으로 이용할 수 없습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ⑤ 본 조 제 1항에 따라 가입된 회원 중 회원가입신청서에 개인정보를
+                잘못 기입했거나 이름 등이 법적 절차에 의해 변경되었을 경우
+                증빙자료 제출/심사 후 오렌지카드 소유자의 변경이 가능합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ⑥ 오렌지카드의 분실/파손/기간만료/사용정지 등의 상태 변경은 회원
+                자격에 영향을 미치지 않습니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 6조 오렌지카드 이용 및 관리</dt>
+
+              <dd class="sub-dep1">
+                ① 회원이 제휴가맹점에서 오렌지서비스를 이용하고자 할 경우에는
+                제휴가맹점에 회원 본인 명의의 오렌지카드를 제시하여야 합니다.
+                단, 여기에서 "오렌지카드를 제시한다" 함은 오렌지카드를
+                제휴가맹점에서 보여주는 행위, 오렌지카드 번호를 입력하는 행위,
+                오렌지카드 비밀번호를 입력하는 행위 등 오렌지서비스를 이용하고자
+                하는 고객이 E1으로부터 적법하게 인정된 회원임을 증명하는 행위를
+                말합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 회원이 오렌지서비스를 이용하고자 오렌지카드를 제휴가맹점에
+                제시할 경우 제휴가맹점은 회원에게 본인 확인을 위한 신분증 제시를
+                요청할 수 있습니다. 이 경우 회원은 제휴가맹점의 요청을
+                준수하여야 정상적인 오렌지서비스를 제공 받을 수 있습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ 오렌지카드는 회원 본인이 직접 사용하여야 하며, E1의 사전 동의
+                없이 타인에게 대여하거나 양도 또는 담보의 목적으로 이용할 수
+                없습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ④ 오렌지카드 및 비밀번호는 회원 스스로의 책임하에 관리하여야
+                하며 회원의 고의 또는 과실로 오렌지카드가 훼손, 분실, 도난
+                되거나 비밀번호가 유출되는 등의 사고(이하 "사고")가 발생한 경우
+                당해 회원은 즉시 그 사실을 E1에게 통지하여야 합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ⑤ 회원으로부터 본 조 제4항에 따른 통지를 받은 경우 E1은 즉시
+                사고 등록 및 당해 오렌지카드의 사용을 중지하는 등 필요한 제반
+                조치를 취합니다. 단, E1은 당해 회원이 본 조 제4항에 따른 통지를
+                한 시점 이전에 발생한 손해에 대하여는 책임을 지지 않습니다.
+              </dd>
+            </dl>
+
+            <dl class="mb40">
+              <dt class="title-dep3 mb10">제 7조 회원탈퇴 및 자격상실/정지</dt>
+              <dd class="sub-dep1">
+                ① 회원은 언제든지 서면, E-mail, 전화 기타 E1이 정하는 방법으로
+                회원탈퇴를 요청할 수 있으며, E1은 회원의 요청에 따라 조속히
+                회원탈퇴에 필요한 제반 절차를 수행합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 회원이 다음 각 호의 사유에 해당하는 경우, E1은 당해 회원에
+                대한 통보로써 회원의 자격을 상실 또는 1년 동안 정지시킬 수
+                있습니다. 자격 상실 통보를 할 경우에는, 자격 상실 통보에 앞서
+                상당한 기간을 정하여 해당 사유에 대한 시정 조치를 요청하고,
+                그러한 시정 조치를 취하지 않을 경우 회원 자격이 상실될 수 있음을
+                통보하여야 합니다. 단, 제다호의 경우에는 별도의 통보 없이 당연히
+                자격이 상실됩니다.<br />
+                <ul class="mb10" style="margin-top: 10px">
+                  <li class="sub-dep2">
+                    회원가입 신청 시에 허위의 내용을 등록한 경우
+                  </li>
+                  <li class="sub-dep2">
+                    오렌지포인트 부정적립 부정사용 등 오렌지서비스를 부정한 방법
+                    또는 목적으로 이용한 경우
+                    <ul class="mb10">
+                      <li class="sub-desc terms">
+                        부정적립이란 제휴가맹점에서 회원이 실제로 상품이나
+                        서비스를 구매하지 않았음에도 불구하고 당해 회원에게
+                        오렌지포인트가 적립된 경우 또는 실제 구매액 이상으로
+                        오렌지포인트가 적립된 경우를 말합니다. 제휴가맹점주,
+                        E1충전소 운영자 및 그 피고용인인 회원이 당해
+                        제휴가맹점에서 오렌지포인트를 적립 받기 위해서는 당해
+                        회원 본인이 동 제휴가맹점에서 실제로 상품이나 서비스를
+                        구매하여야 하며 그 이외의 경우(당해 제휴가맹점에서
+                        상품이나 서비스를 구매한 당사자의 동의가 있는 경우
+                        포함)에는 부정적립으로 봅니다.
+                      </li>
+                      <li class="sub-desc terms mb10">
+                        부정사용이란 회원이 E1과 타 회원의 동의 없이 타 회원의
+                        오렌지포인트를 임의로 사용한 경우를 말합니다.
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-dep2">회원이 사망한 경우</li>
+                  <li class="sub-desc terms">
+                    오렌지서비스 홈페이지를 이용하여 구입한 상품/서비스 대금,
+                    기타 오렌지서비스 홈페이지 이용과 관련하여 회원이 부담하는
+                    채무를 기일에 지급하지 않는 경우
+                  </li>
+                  <li class="sub-desc terms">
+                    다른 회원의 오렌지서비스 홈페이지 이용을 방해하거나 그
+                    정보를 도용하는 등 전자거래질서를 위협하는 경우
+                  </li>
+                  <li class="sub-desc terms">
+                    오렌지서비스를 이용하여 법령과 이 약관이 금지하거나
+                    공서양속에 반하는 행위를 하는 경우
+                  </li>
+
+                  <li class="sub-desc terms">
+                    기타 본 약관에 규정된 회원의 의무를 위반한 경우
+                  </li>
+                  <li class="sub-desc terms mb10">
+                    타인의 명의를 이용 또는 도용한 경우
+                  </li>
+                </ul>
+              </dd>
+              <dd class="sub-dep1">
+                ③ 본 조 제2항의 사유로 자격이 상실 또는 정지된 회원은 제2항 각
+                호의 사유가 자신의 고의 또는 과실에 기한 것이 아님을 소명할 수
+                있습니다. 이 경우 E1은 회원의 소명 내용을 심사하여 회원의 주장이
+                타당하다고 판단하는 경우 회원으로 하여금 정상적인 오렌지서비스를
+                이용할 수 있도록 합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ④ 본 조 제1항에 의한 회원탈퇴 또는 제2항에 의한 회원자격상실이
+                확정되는 시점은 다음 각 호와 같습니다.
+                <ul class="mb10">
+                  <li class="sub-dep2">
+                    회원 탈퇴 요청일에 회원 탈퇴가 확정됩니다. 단, 회원 탈퇴
+                    요청 시에 잔여 오렌지포인트에 대한 권리를 포기하지 않는
+                    경우에는, 그 권리 포기 시에 회원 탈퇴가 확정됩니다.
+                  </li>
+                  <li class="sub-dep2">
+                    회원자격상실 통보일로부터 [14]일 이내에 회원의 이의제기가
+                    없는 경우, 회원자격상실 통보일로부터 [14]일 경과한 후
+                    회원자격상실이 확정됩니다.
+                  </li>
+                  <li class="sub-dep2">
+                    회원자격상실 통보일로부터 [14]일 이내에 회원의 이의제기가
+                    있는 경우, 그에 대한 심사 결과 회원의 주장이 이유없는 것으로
+                    판단되는 경우, 당해 심사일에 회원자격상실이 확정됩니다.
+                  </li>
+                  <li class="sub-dep2">
+                    사망으로 인한 자격상실의 경우에는 회원 사망일에 자격상실이
+                    확정됩니다.
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+
+            <h2
+              class="title-dep2 mb30"
+              style="
+                padding: 0px 10px 1px;
+                border-left-width: 7px;
+                border-left-style: solid;
+                border-left-color: #e86600;
+              "
+            >
+              제 3장 E1 오렌지포인트
+            </h2>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 8조 포인트 적립</dt>
+              <dd class="sub-dep1">
+                ① 제휴가맹점에서 상품을 구입하거나 서비스를 이용하고 그에 따른
+                대금을 결제한 회원은 E1와 제휴가맹점 간에 약정되거나 E1이
+                회원에게 약정한 바에 따라 아래와 같은 오렌지포인트를 부여 받게
+                됩니다. 단, 오렌지포인트의 종류 및 성격에 따라 E1이 지정하는
+                특정 제휴가맹점에서만 적립이 가능하거나, 포인트 적립을 위하여
+                일정한 회원에게 일정한 자격요건이 요구될 수 있습니다.
+                오렌지포인트 = (상품 구입대금 또는 서비스 이용대금) × (E1과
+                제휴가맹점 간에 약정되거나 E1이 회원에게 약정한 오렌지포인트
+                적립율)
+              </dd>
+              <dd class="sub-dep1">
+                ② 본 조 제1항에 따라 회원의 상품 구입대금 또는 서비스 이용대금을
+                오렌지포인트로 환산할 때 소수점 이하의 포인트는 절사 되고, 상품
+                구입대금 또는 서비스 이용대금이 E1과 제휴가맹점 간에 별도 정한
+                금액 미만일 경우에는 오렌지포인트가 부여되지 않으며
+                제휴가맹점에서의 거래 1회당 부여되는 오렌지포인트는
+                일십만(100,000)포인트를 초과하지 않는 것을 원칙으로 합니다. 단,
+                E1과 제휴가맹점간 계약을 통해 적립 한도를 다르게 설정할 수
+                있습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ 본 조 제1항의 경우 회원이 현금, 신용카드 등을 통해 결제를 한
+                후 오렌지카드와 그 밖의 다른 마일리지 또는 할인카드를 제시하고
+                이중 포인트 누적 또는 이중 할인요구 등을 했을 때 제휴가맹점은
+                이를 거부할 수 있습니다. 이때 회원은 제휴가맹점의 요구에 따라
+                하나의 포인트제도 또는 할인제도를 선택하여야 합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ④ 제휴가맹점에 따라 오렌지서비스 중 오렌지포인트적립 또는
+                현금대체결제 중 일부만이 가능할 수도 있습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ⑤ 본 조 제1항 및 제5항에 의한 포인트의 적립 이외에도 E1이
+                인정하는 경우에는 포인트의 전환, 교환 등 기타 방법에 의한
+                포인트의 적립도 가능합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ⑥ 오렌지포인트의 적립과 관련하여 발생하는 제세공과금은 회원이
+                부담합니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 9조 포인트 사용</dt>
+
+              <dd class="sub-dep1">
+                ① 일정 이상의 가용포인트(이하 "사용가능 최저포인트")를 보유한
+                회원은 제휴가맹점에 대한 오렌지카드 비밀번호 제시 등 E1이 정한
+                소정 절차에 따라 상품 구매나 서비스 이용에 따른 대금의 일부 또는
+                전부를 가용포인트로 결제할 수 있습니다. 단, 오렌지포인트의 종류
+                및 성격에 따라 E1이 지정하는 특정 제휴가맹점에서만 가용포인트를
+                이용한 결제가 가능하거나, 이러한 결제를 위하여 회원에게 일정한
+                자격요건이 요구될 수 있으며, 특정 제휴가맹점에서 포인트 사용 시
+                상품가격 할인 서비스를 제공할 수 있습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 본 조 제1항에서 "사용가능 최저포인트"라 함은 원칙적으로
+                오렌지서비스 홈페이지 및 온라인(on-line)제휴가맹점에서 사용할
+                경우에는 일 포인트(1 point), 오프라인(off-line)제휴가맹점 및 E1
+                충전소에서 사용할 경우에는 일천 포인트(1,000 point)로 합니다.
+                단, E1과 제휴가맹점 간의 계약에 의하여 사용가능 최저 포인트를
+                다르게 적용할 수 있습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ 회원은 오렌지포인트를 타인에게 양도하거나 대여 또는 담보의
+                목적으로 이용할 수 없습니다. 다만, E1이 인정하는 적법한 절차를
+                따른 경우는 예외로 합니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 10조 포인트 정정, 취소 및 소멸</dt>
+
+              <dd class="sub-dep1">
+                ① 오렌지포인트 적립에 오류가 있을 경우 회원은 오류발생 시점부터
+                90일 이내에 E1에 정정 신청을 하여야 하며, E1은 회원의 정정
+                신청일로부터 3개월 이내에 조정할 수 있습니다. 단, 회원은 이를
+                증명할 수 있는 전표 또는 자료를 E1에 제시하여야 합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 오렌지포인트의 유효기간은 60개월이며, 각각의 오렌지포인트는
+                최초로 당해 오렌지포인트 사용이 가능한 월로부터 60개월 동안
+                사용되지 않는 경우, 자동적으로 소멸됩니다. 단, 오렌지포인트의
+                종류 및 성격에 따라 특정 오렌지포인트의 소멸 조건은 달리 정해질
+                수 있으며, 이 경우 그러한 소멸 조건을 회원에게 별도로 안내해
+                드립니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">
+                제 11조 포인트 적립 및 사용조건의 안내
+              </dt>
+              <dd class="sub-dep1">
+                E1은 제휴가맹점별 오렌지포인트 적립/사용 조건 및 관련 제약사항을
+                오렌지서비스 홈페이지 등을 통하여 회원에게 고지하며,
+                오렌지포인트 적립조건이 바뀌더라도 본 약관이 변경되지는
+                않습니다.
+              </dd>
+            </dl>
+            <dl class="mb40">
+              <dt class="title-dep3 mb10">제 12조 회원탈퇴와 포인트 처리</dt>
+              <dd class="sub-dep1">
+                ① 회원이 탈퇴 요청을 하는 경우, 회원은 탈퇴 요청일 현재까지
+                회원이 사용하지 않은 오렌지포인트에 대한 권리도 포기하여야 하며,
+                그 권리를 포기하지 않는 경우에는 탈퇴가 확정되지 아니합니다.
+              </dd>
+
+              <dd class="sub-dep1">
+                ② 본 약관 제7조 제2항에 정해진 바에 의하여 자격상실 통보를 받은
+                회원은, 자격상실 통보시까지 적립된 가용포인트를 자격상실을 통보
+                받은 날로부터 3월 내에 사용하여야 하며, 그 기간 내에 사용하지
+                않은 오렌지포인트는 소멸됩니다.
+              </dd>
+            </dl>
+
+            <h2
+              class="title-dep2 mb30"
+              style="
+                padding: 0px 10px 1px;
+                border-left-width: 7px;
+                border-left-style: solid;
+                border-left-color: #e86600;
+              "
+            >
+              제 4장 E1 오렌지카드 홈페이지
+            </h2>
+
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 13조 오렌지서비스 홈페이지</dt>
+
+              <dd class="sub-dep1">
+                ① E1은 회원에 대한 효율적인 오렌지서비스를 제공하기 위하여
+                오렌지서비스 홈페이지를 각각 운영하며, 본 약관 제20조에서
+                제31조는 회원이 오렌지서비스 홈페이지에서 각각 제공하는 각종
+                서비스(이하 "홈페이지 서비스")를 이용함에 있어 필요한 사항을
+                규정합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② E1은 오렌지서비스 홈페이지 운영과 관련하여 관계 법령과 이
+                약관이 금지하거나 공서양속에 반하는 행위를 하지 않으며, 이
+                약관이 정하는 바에 따라 지속적이고 안정적으로 상품,서비스를
+                제공하는 데 최선을 다합니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">
+                제 14조 홈페이지 서비스의 내용 및 변경
+              </dt>
+              <dd class="sub-dep1">
+                ① E1은 오렌지서비스 홈페이지를 통하여 다음과 같은 업무를
+                수행합니다.
+                <ul class="mb10">
+                  <li class="sub-dep2 sub-list1">
+                    회원에 대한 오렌지서비스 관련 제반 정보의 제공
+                  </li>
+                  <li class="sub-dep2 sub-list1">
+                    상품 서비스에 대한 정보 제공 및 구매계약의 체결
+                  </li>
+                  <li class="sub-dep2 sub-list1">기타 E1이 정하는 업무</li>
+                </ul>
+              </dd>
+              <dd class="sub-dep1">
+                ② E1은 오렌지서비스 홈페이지를 통한 상품 서비스의 매매와
+                관련하여 상품의 품절 또는 기술적 사양의 변경 등의 경우에는 장차
+                체결되는 계약에 의해 제공할 상품 서비스의 내용을 변경할 수
+                있습니다. 이로 인하여 당해 회원에게 손해가 발생하고 동 손해가
+                E1의 고의 또는 과실에 기인한 경우 E1은 그에 대한 배상 책임을
+                집니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ 전 항의 규정에 의하여 E1이 장차 체결되는 계약에 의해 제공할
+                상품/서비스의 내용을 변경하고자 할 경우에는 변경된 상품 서비스의
+                내용 및 제공일자를 명시하여 현재의 상품 서비스의 내용을 게시한
+                곳에 그 제공일자 이전 7일 전부터 공지합니다. 단, 변동내용을
+                구체적으로 공지하기가 불가능한 경우에는 7일 전에 그 취지 및
+                공지가 불가능한 변동사유를 현재의 상품 서비스를 게시한 곳에
+                공지합니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 15조 홈페이지 서비스의 중단</dt>
+              <dd class="sub-dep1">
+                ① E1은 컴퓨터 등 정보통신설비의 점검,보수 ,교체 및 고장, 통신의
+                두절 등의 사유가 발생한 경우에는 홈페이지 서비스의 제공을
+                일시적으로 중단할 수 있습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 본 조 제1항의 사유로 홈페이지 서비스를 중단하고자 할 경우 E1은
+                E-mail로 발송하거나 오렌지서비스 홈페이지에 게시하는 방법으로
+                회원에게 홈페이지 서비스 중단사실을 알려드립니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ E1의 고의 또는 과실에 기인한 홈페이지 서비스의 부당한 중단 및
+                시스템 장애로 회원이 손해를 입은 경우, E1은 통상적으로 예상
+                가능한 범위 내에서 동 손해를 배상합니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 16조 회원ID 및 Password</dt>
+              <dd class="sub-dep1">
+                ① 홈페이지 서비스를 이용하고자 하는 회원은 E1이 정하는 바에 따라
+                회원ID 및 Password를 오렌지서비스 홈페이지에 각각 등록하여야
+                합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 회원ID와 Password에 관한 관리책임은 회원 본인에게 있으므로
+                회원은 자신의 ID 및 Password를 제3자에게 알려주거나 이용하게
+                해서는 안됩니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ 회원이 자신의 ID 또는 Password를 도난 당하거나 제3자가
+                사용하고 있음을 인지한 경우에는 즉시 E1에 통보하고 E1의 안내가
+                있는 경우에는 그에 따라야 합니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 17조 상품/서비스의 구매</dt>
+              <dd class="sub-dep1">
+                ① 회원은 다음 각 호의 절차에 따라 오렌지서비스 홈페이지를 통하여
+                상품 또는 서비스를 구매할 수 있습니다.
+                <ul class="mb10">
+                  <li class="sub-dep2 sub-list1">성명, 주소, 전화번호 입력</li>
+                  <li class="sub-dep2 sub-list1">상품 또는 서비스의 선택</li>
+
+                  <li class="sub-dep2 sub-list1">결제방법의 선택</li>
+                  <li class="sub-dep2 sub-list1">
+                    기타 E1이 별도로 정하는 절차
+                  </li>
+                </ul>
+              </dd>
+              <dd class="sub-dep1">
+                ② E1은 회원이 원하지 않을 경우 영리목적의 광고성 전자우편을
+                발송하지 않으며, 상품이나 서비스에 대하여「표시,
+                광고의공정화에관한법률」제3조 소정의 부당한 표시,광고행위를 하지
+                않습니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 18조 대금 지급 방법</dt>
+              <dd class="sub-dep1">
+                ① 회원은 구매한 상품 또는 서비스에 대한 대금지급을 다음 각 호의
+                하나 또는 그 이상을 결합하여 할 수 있습니다.
+                <ul class="mb10">
+                  <li class="sub-dep2 sub-list1">계좌이체</li>
+                  <li class="sub-dep2 sub-list1">신용카드결제</li>
+                  <li class="sub-dep2 sub-list1">온라인무통장입금</li>
+
+                  <li class="sub-dep2 sub-list1">오렌지포인트를 이용한 결제</li>
+                  <li class="sub-dep2 sub-list1">전자화폐에 의한 결제</li>
+                  <li class="sub-dep2 sub-list1">수령시 현금지급 등</li>
+                </ul>
+              </dd>
+              <dd class="sub-dep1">
+                ② 전항의 규정에도 불구하고 E1은 공급되는 상품 또는 서비스의
+                성격에 따라 대금지급방법을 한정할 수 있으며, 이러한 경우에는
+                회원이 구매신청을 하기 전에 확인할 수 있도록 사전 고지합니다.
+              </dd>
+            </dl>
+
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">
+                제 19조 수신확인통지,구매신청 변경 및 취소
+              </dt>
+              <dd class="sub-dep1">
+                ① E1은 회원으로부터 상품 또는 서비스에 대한 구매신청을 받은 경우
+                당해 회원에게 구매가 성공적으로 완료되었다는 메시지(이하
+                "구매완료 메시지")를 보여주며 이러한 구매완료 메시지를 회원에게
+                보여줌으로써 당해 상품 또는 서비스에 대한 구매계약이 성립합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 회원이 구매신청 변경 또는 취소를 하고자 할 경우에는 구매완료
+                메시지를 확인한 때로부터 7일 이내에 E1에게 구매신청 변경 또는
+                취소를 요청할 수 있습니다. 단, E1이 지정하는 일부 상품 또는
+                서비스의 경우에는 구매신청 변경 또는 취소가 제한될 수 있습니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 20조 배송</dt>
+              <dd class="sub-dep1">
+                E1은 회원이 구매한 상품에 대해 배송수단, 수단별 배송비용 부담자,
+                수단별 배송기간 등을 회원에게 알려드립니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 21조 환급, 반품 및 교환</dt>
+
+              <dd class="sub-dep1">
+                ① E1은 회원이 구매 신청한 상품 또는 서비스를 품절 등의 사유로
+                제공 할 수 없을 경우 지체 없이 그 사유를 당해 회원에게 통지하고,
+                그 통지일로부터 3일 이내에 계약해제 및 환급절차를 취합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 다음 각 호의 경우 회원은 상품을 인도 받거나 서비스를 제공 받은
+                날부터 20일 이내에 환급, 반품 또는 교환 청구를 할 수 있습니다.
+                <ul class="mb10">
+                  <li class="sub-dep2 sub-list1">
+                    배송된 상품이 주문내용과 상이하거나 E1이 제공한 정보와
+                    상이할 경우
+                  </li>
+                  <li class="sub-dep2 sub-list1">
+                    배송된 상품이 파손, 손상되었거나 오염되었을 경우
+                  </li>
+                  <li class="sub-dep2 sub-list1">
+                    상품의 인도 또는 서비스의 제공이 광고에 표시된 상품의
+                    인도시기 또는 서비스의 제공시기 보다 늦어진 경우
+                  </li>
+                  <li class="sub-dep2 sub-list1">
+                    관련법령에 의하여 광고에 표시하여야 할 사항을 표시하지
+                    아니한 상태에서 회원의 청약이 이루어진 경우
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 22조 회원의 의무</dt>
+              <dd class="sub-dep1">
+                회원은 홈페이지 서비스 이용과 관련하여 다음 각 호의 행위를
+                하여서는 안됩니다.
+                <ul class="mb10">
+                  <li class="sub-dep2 sub-list1">
+                    홈페이지 서비스 이용 관련 제반 신청행위 또는 변경행위 시
+                    허위내용 기재행위
+                  </li>
+
+                  <li class="sub-dep2 sub-list1">
+                    오렌지서비스 홈페이지에 게시된 각종 정보의 무단 변경, 삭제
+                    등 훼손 행위
+                  </li>
+                  <li class="sub-dep2 sub-list1">
+                    E1이 허용한 정보 이외의 다른 정보(컴퓨터 프로그램 및 광고
+                    등)를 송신하거나 게시하는 행위
+                  </li>
+                  <li class="sub-dep2 sub-list1">
+                    E1 기타 제3자의 저작권 등 지적재산권에 대한 침해 행위
+                  </li>
+                  <li class="sub-dep2 sub-list1">
+                    E1 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위
+                  </li>
+                  <li class="sub-dep2 sub-list1">
+                    외설 또는 폭력적인 정보(메시지, 화상 ,음성 등), 기타
+                    공서양속에 반하는 정보를 오렌지서비스 홈페이지에 공개하거나
+                    게시하는 행위
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 23조 Web site 연결과 E1의 책임</dt>
+              <dd class="sub-dep1">
+                오렌지서비스 홈페이지와 다른 Web site가 각종 링크(예: 링크의
+                대상에는 문자, 그림 및 동화상 등이 포함됨)등의 방식으로 연결된
+                경우, E1은 회원과 당해 Web site간 일체의 거래에 대해서 어떠한
+                책임도 지지 않습니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 24조 저작권의 귀속 및 이용제한</dt>
+              <dd class="sub-dep1">
+                ① E1이 작성한 저작물에 대한 저작권 기타 지적재산권은 E1에
+                귀속합니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 회원은 오렌지서비스 홈페이지를 이용함으로써 얻은 정보를 E1의
+                사전 승낙 없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여
+                영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.
+              </dd>
+            </dl>
+            <dl class="mb40">
+              <dt class="title-dep3 mb10">
+                제 25조 홈페이지 서비스 이용 관련 분쟁해결
+              </dt>
+
+              <dd class="sub-dep1">
+                ① E1은 홈페이지 서비스 이용과 관련하여 회원으로부터 제출되는
+                불만사항 및 의견을 최대한 신속하게 처리합니다. 다만, 신속한
+                처리가 곤란한 경우에는 회원에게 그 사유와 처리일정을 조속히
+                통보해 드립니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② E1와 회원간에 발생한 분쟁은 전자거래기본법에 의하여 설치된
+                전자거래분쟁 조정위원회의 조정에 따를 수 있습니다.
+              </dd>
+            </dl>
+            <h2
+              class="title-dep2 mb30"
+              style="
+                padding: 0px 10px 1px;
+                border-left-width: 7px;
+                border-left-style: solid;
+                border-left-color: #e86600;
+              "
+            >
+              제 5장 기타
+            </h2>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 26조 회원의 개인정보 보호</dt>
+
+              <dd class="sub-dep1">
+                ① E1은 회원의 개인정보 보호에 대한 상세한 내용을 ‛개인정보
+                처리방침’에 명시하고 있으며, 회원이 상시 확인할 수 있도록
+                오렌지서비스 홈페이지를 통해 공지하고 있습니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 회원의 개인정보 보호와 관련된 내용은 추가, 변경될 수 있으며,
+                이 경우 추가 또는 변경사항을 ‘개인정보 처리방침’에 명시한 방법에
+                따라 회원에게 알려 드립니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 27조 오렌지서비스 종료</dt>
+
+              <dd class="sub-dep1">
+                ① 오렌지서비스를 종료하고자 할 경우, E1은 오렌지서비스를
+                종료하고자 하는 날로부터 3개월 이전에 본 약관 제4조 제1항에
+                규정된 통지방법을 준용하여 회원에게 알려드립니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 본 조 제1항에 따른 오렌지서비스 종료 통지가 있은 날("통지일")
+                이후 회원은 제휴가맹점 및 E1충전소에서 오렌지포인트 적립혜택을
+                받지 못하며, 통지일 현재 기 적립된 오렌지포인트는 E1이 별도
+                지정하는 날("서비스 종료일")까지 본 약관이 정하는 바에 따라
+                사용해야 합니다. 서비스 종료일까지 사용하지 않거나 현금으로 상환
+                되지 않은 오렌지포인트는 자동으로 소멸됩니다.
+              </dd>
+              <dd class="sub-dep1">
+                ③ 본 조 제1항에 따른 오렌지서비스 종료 통지가 있은 날("통지일")
+                이후 회원은 E1으로부터 오렌지서비스를 제공받지 못합니다.
+              </dd>
+            </dl>
+            <dl class="mb20">
+              <dt class="title-dep3 mb10">제 28조 준거법 및 합의관할</dt>
+
+              <dd class="sub-dep1">
+                ① 본 약관에서 정하지 않은 사항과 본 약관의 해석에 관하여는
+                대한민국법 및 상관례에 따릅니다.
+              </dd>
+              <dd class="sub-dep1">
+                ② 오렌지서비스 및 본 약관과 관련한 제반 분쟁 및 소송은
+                민사소송법상의 관활을 가지는 대한민국 법원을 제1심 관할법원으로
+                합니다.
+              </dd>
+            </dl>
+            <p class="ttype_3" style="margin-top: 30px">
+              <strong>[부칙]</strong> 본 약관은 2024년 7월 2일부터 시행합니다.
+            </p>
+          </div>
+          <div class="pr-[.8rem] text-right">
+            <radio-group class="ipt-line">
+              <div class="ipt-item">
+                <radio-group-item id="rdTerms01Ok" checked></radio-group-item>
+                <label for="rdTerms01Ok">동의함</label>
+              </div>
+              <div class="ipt-item">
+                <radio-group-item id="rdTerms01No"></radio-group-item>
+                <label for="rdTerms01No">동의하지 않음</label>
+              </div>
+            </radio-group>
+          </div>
+        </div>
+        <div class="mt-16 md:mt-8">
+          <p class="fs-16 font-bold text-gray-700">
+            개인정보 수집 및 이용에 대한 안내 동의<strong
+              class="fs-16 align-baseline font-bold text-primary"
+              >(필수)</strong
+            >
+          </p>
+          <div id="divContentes" class="terms-box data-terms"></div>
+          <div class="pr-[.8rem] text-right">
+            <radio-group class="ipt-line">
+              <div class="ipt-item">
+                <radio-group-item id="rdTerms02Ok" checked></radio-group-item>
+                <label for="rdTerms02Ok">동의함</label>
+              </div>
+              <div class="ipt-item">
+                <radio-group-item id="rdTerms02No"></radio-group-item>
+                <label for="rdTerms02No">동의하지 않음</label>
+              </div>
+            </radio-group>
+          </div>
+        </div>
+        <div class="mt-16 md:mt-8">
+          <p class="fs-16 font-bold text-gray-700">
+            맞춤형 서비스 제공을 위한 마케팅 수집이용 동의<strong
+              class="fs-16 align-baseline font-bold text-gray-600"
+              >(선택)</strong
+            >
+          </p>
+          <div id="divContentes" class="terms-box data-terms"></div>
+
+          <div class="pr-[.8rem] text-right">
+            <radio-group class="ipt-line">
+              <div class="ipt-item">
+                <radio-group-item id="rdTerms03Ok" checked></radio-group-item>
+                <label for="rdTerms03Ok">동의함</label>
+              </div>
+              <div class="ipt-item">
+                <radio-group-item id="rdTerms03No"></radio-group-item>
+                <label for="rdTerms03No">동의하지 않음</label>
+              </div>
+            </radio-group>
+          </div>
+        </div>
+      </div>
+      <!-- 광고동의 -->
+      <div class="border-top mb-16 pt-[2.8rem] md:pt-16">
+        <div class="ipt-line">
+          <div class="ipt-item">
+            <checkbox id="chkAdvertising" class="ipt-check"></checkbox>
+            <label for="chkAdvertising">광고성 정보 수신 동의</label>
+          </div>
+        </div>
+        <div class="ipt-line sub">
+          <div class="ipt-item">
+            <checkbox id="chkEmail" class="ipt-check noline"></checkbox>
+            <label for="chkEmail">이메일</label>
+          </div>
+        </div>
+        <div class="ipt-line sub">
+          <div class="ipt-item">
+            <checkbox id="chkSms" class="ipt-check noline"></checkbox>
+            <label for="chkSms">SMS</label>
+          </div>
+        </div>
+        <div class="ipt-line sub">
+          <div class="ipt-item">
+            <checkbox id="chkPush" class="ipt-check noline"></checkbox>
+            <label for="chkPush">App Push</label>
+          </div>
+        </div>
+        <div class="ipt-line sub">
+          <div class="ipt-item">
+            <checkbox id="chkKakao" class="ipt-check noline"></checkbox>
+            <label for="chkKakao">카카오 알림톡/친구톡</label>
+          </div>
+        </div>
+        <div class="mt-8 md:mt-12">
+          <ul class="list-dot pl-[3.6rem] text-gray-600">
+            <li>
+              E1 오렌지카드와 관련한 정보(이벤트, 할인쿠폰, 기념일 등)를
+              안내해드립니다.
+            </li>
+            <li>
+              비밀번호 변경 등 일부 안내사항은 수신동의 여부와 상관 없이
+              발송됩니다.
+            </li>
+          </ul>
+        </div>
+        <div class="gray-box mt-8 hidden md:mt-16 md:block">
+          <ul class="list-dot text-gray-600">
+            <li>
+              「 개인정보보호법 」 제 15조, 제 22조에 따라 고객 본인의 동의를
+              얻고 있습니다. 반드시 약관 및 개인정보 수집 내용을 확인해주세요.
+            </li>
+            <li>
+              자세한 사항은 개인정보처리방침에서 다시 확인하실 수 있습니다.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="btn-wrap p-8 pb-0 md:pt-24">
+      <NuxtLink class="btn-txt gray">취소</NuxtLink>
+      <NuxtLink class="btn-txt primary">확인</NuxtLink>
+    </div>
+  </div>
+</template>
+<script setup lang="ts">
+import { Checkbox } from "@/components/ui/checkbox";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+// 스토어
+const stores = {
+  layout: useStoreLayout(),
+};
+
+// 레이아웃 선택
+definePageMeta({
+  layout: "sub",
+});
+
+onBeforeMount(() => {
+  // 레이아웃 추가 설정
+  stores.layout.$setGnbActive("");
+  stores.layout.$setPageTitle("약관동의");
+});
+</script>
+<style lang="css" scoped>
+.terms-box {
+  height: 18.2rem;
+  margin: 0.8rem 0;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: solid 1px #e8ecef;
+  color: #858e96;
+  overflow: auto;
+}
+.terms-box * + * {
+  margin-top: 2rem;
+}
+.terms-box h2,
+.terms-box dt {
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .terms-box {
+    height: 21.4rem;
+    margin: 1.6rem 0;
+    padding: 4rem;
+  }
+  .ipt-line.sub {
+    display: inline-block;
+    padding-right: 6rem;
+    margin-top: 3rem !important;
+  }
+}
+</style>

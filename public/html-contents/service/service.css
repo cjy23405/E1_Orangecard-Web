@@ -1,0 +1,261 @@
+@charset "utf-8";
+.spe-ser-body,
+.spe-ser-body * {
+  box-sizing: border-box;
+}
+.spe-ser-body * {
+  padding: 0;
+  margin: 0;
+  color: #1d2023;
+  font-family: "Pretendard";
+  vertical-align: baseline;
+}
+.spe-ser-text-lpg {
+  color: #e96320;
+}
+.spe-ser-text-h2 {
+  color: #0080c6;
+}
+.spe-ser-text-ev {
+  color: #2ab673;
+}
+.spe-ser-m-block {
+  display: block;
+}
+.spe-ser-only-mob {
+  display: block;
+}
+.spe-ser-only-pc {
+  display: none;
+}
+
+/* 상단 graybox */
+.spe-ser-cont {
+  padding: 20px;
+}
+.spe-ser-g-box {
+  width: 100%;
+  height: auto;
+  background: #f8f8f8;
+  border-radius: 12px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.spe-ser-g-box-cont {
+  position: relative;
+  z-index: 1;
+}
+.spe-ser-tag-box {
+  display: flex;
+}
+.spe-ser-tag-box > * {
+  flex: 1 1 0;
+  max-width: 33%;
+  display: block;
+  height: 28px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: #fff;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 700;
+}
+.spe-ser-tag-box > * + * {
+  margin-left: 8px;
+}
+.spe-ser-title {
+  margin-top: 58px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.spe-ser-title * {
+  display: block;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 0.8rem;
+}
+.spe-ser-top-sub-title {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.spe-ser-btn-box {
+  margin-top: 20px;
+}
+.spe-ser-btn {
+  display: block;
+  width: 100%;
+  height: 48px;
+  background-color: #e96320;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
+}
+.spe-ser-btn img {
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  margin-bottom: -2px;
+  display: inline-block;
+}
+.spe-ser-top-img {
+  display: none;
+}
+
+/* 하단 공통 */
+.spe-ser-sub-data {
+  margin: 40px 0;
+}
+.spe-ser-sub-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.spe-ser-sub-title img {
+  width: 38px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: -2px;
+}
+.spe-ser-sub-text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* 하단 개별 */
+.spe-ser-detail-data {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.spe-ser-detail-data img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 라인박스 유형 */
+.spe-ser-line-box {
+  position: relative;
+  margin: 0 -20px;
+  padding: 40px 20px 52px;
+}
+.spe-ser-line-box::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: linear-gradient(to right, #e96320, rgba(233, 99, 32, 0));
+}
+.spe-ser-line-box-title {
+  text-align: left;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .spe-ser-body {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  .spe-ser-m-block {
+    display: inline-block;
+  }
+  .spe-ser-only-mob {
+    display: none;
+  }
+  .spe-ser-only-pc {
+    display: block;
+  }
+  .spe-ser-cont {
+    padding: 60px 0;
+    border-top: 1px solid #e8ecef;
+    border-bottom: 1px solid #e8ecef;
+  }
+  .spe-ser-g-box {
+    height: 440px;
+    padding: 40px;
+    text-align: left;
+  }
+  .spe-ser-tag-box {
+    display: block;
+    font-size: 0;
+  }
+  .spe-ser-tag-box > * {
+    display: inline-block;
+    height: 38px;
+    padding: 0 16px;
+    line-height: 38px;
+    border-radius: 19px;
+  }
+  .spe-ser-title {
+    margin-top: 40px;
+    font-size: 44px;
+    line-height: 54px;
+  }
+  .spe-ser-title * {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .spe-ser-top-sub-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .spe-ser-btn-box {
+    margin-top: 40px;
+  }
+  .spe-ser-btn {
+    display: inline-block;
+    width: 210px;
+    height: 56px;
+    line-height: 56px;
+  }
+  .spe-ser-top-img {
+    display: block;
+    position: absolute;
+  }
+
+  /* 하단 공통 */
+  .spe-ser-sub-data {
+    margin: 100px 0 60px;
+  }
+  .spe-ser-sub-title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .spe-ser-sub-title img {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  .spe-ser-sub-text {
+    margin-top: 26px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  /* 하단 개별 */
+  .spe-ser-detail-data {
+    padding-bottom: 0;
+  }
+
+  /* 라인박스 유형 */
+  .spe-ser-line-box {
+    margin: 0;
+    padding: 98px 0 60px;
+  }
+  .spe-ser-line-box-title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
