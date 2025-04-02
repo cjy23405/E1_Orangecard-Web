@@ -74,7 +74,7 @@ export const $clearSignUpSession = () => {
     session: useStoreSession(),
   };
   const locale = useLocale();
-  const reg = new RegExp(`(^|^/${locale})(/etc)*/sign-up`);
+  const reg = new RegExp(`(^|^/${locale})(/etc)*(/sign-up|/auth/kakao)`);
   const route = useRoute();
 
   if (!reg.test(route.fullPath) && stores.session.signUp) {

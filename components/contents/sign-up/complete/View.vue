@@ -51,7 +51,7 @@ const init = () => {
 
 <template>
   <ContentsSignUpCheckSession
-    :check-path="`(${useEtcRoute('/sign-up/profile')}|${useEtcRoute('/sign-up')}|${useEtcRoute('/sign-up/kakao-enter-id')}|${useEtcRoute('/sign-up/kakao-verify-phone')}|${useEtcRoute('/login')}|/auth/kakao/callback)`"
+    :check-path="`(${useEtcRoute('/sign-up/profile')}|${useEtcRoute('/sign-up')}|${useEtcRoute('/sign-up/kakao-enter-id')}|${useEtcRoute('/sign-up/kakao-verify-phone')}|${useEtcRoute('/login')}|/auth/kakao/callback?.+)`"
     :denied-path="useEtcRoute('/login')"
     @clear="init"
   >
