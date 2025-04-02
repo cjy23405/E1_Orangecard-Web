@@ -6,20 +6,33 @@ const props = defineProps<{
   callback?: LoginSetup["callback"];
 }>();
 
+// isKakaoTalk
+const isKakaoTalk = useIsKakaoTalk();
+
 // hook
-const hookKakaoAuth = useHookKakaoAuth("loginAuthenticationPopup");
+const hookKakaoAuth = useHookKakaoAuth(
+  isKakaoTalk ? "_self" : "loginAuthenticationPopup",
+);
+
+// session
+const kakaoSelfLogin = useSessionStorage<string | null>("kakaoSelfLogin", null);
 
 // ref
 const raw = useTemplateRef("raw");
 
 // 카카오 인증
 const kakaoAuth = () => {
-  hookKakaoAuth
-    ?.open()
-    .then((kakaoData) => {
-      raw.value?.kakaoLogin(kakaoData, props.callback);
-    })
-    .catch(() => {});
+  if (isKakaoTalk) {
+    kakaoSelfLogin.value = "login";
+    hookKakaoAuth?.open();
+  } else {
+    hookKakaoAuth
+      ?.open()
+      .then((kakaoData) => {
+        raw.value?.kakaoLogin(kakaoData, props.callback);
+      })
+      .catch(() => {});
+  }
 };
 
 // 카카오 인증 클릭

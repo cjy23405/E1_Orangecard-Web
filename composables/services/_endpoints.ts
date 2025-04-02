@@ -271,9 +271,14 @@ export const endpoints: { [index: string]: ApiEndpoint } = {
     path: "/mbr/v1/getMbrInfo",
   },
   // 비밀번호 변경
-  myNewPassword: {
+  myCreatePassword: {
     apiNo: "B2C_MBR_002",
     path: "/mbr/v1/modLoginPw",
+  },
+  // 비밀번호 변경(기존 비밀번호 포함)
+  myChangePassword: {
+    apiNo: "B2C_MBR_003",
+    path: "/mbr/v1/modLoginPwByOldPw",
   },
   // 회원 정보 수정 (sig 필요)
   myProfileEdit: {
@@ -359,6 +364,11 @@ export const endpoints: { [index: string]: ApiEndpoint } = {
   cardCheckPassword: {
     apiNo: "B2C_MBR_025",
     path: "/mbr/v1/getMbrCardPwExists",
+  },
+  // 비밀번호 변경 건너뛰기
+  myPasswordChangeSkip: {
+    apiNo: "B2C_MBR_028",
+    path: "/mbr/v1/skipPwdChange",
   },
   // 티티톡 정보 암호화 처리
   myEncodeCustomerKey: {

@@ -129,27 +129,29 @@ $setSEO({
         class="border-y border-solid border-gray-300 p-8 pb-6 md:border-none md:px-16 md:py-[2.8rem]"
       >
         <p class="overflow-hidden">
-          <span
-            v-if="fuelTypeList.length >= 3"
-            class="fs-12 font-bold text-gray-600 md:!text-lg"
-          >
-            전체
-          </span>
-          <template v-else>
+          <span class="bar bar-gray inline-block">
             <span
-              v-for="type in fuelTypeList"
-              :key="type"
-              :class="[
-                'fs-12 font-bold md:!text-lg',
-                {
-                  'text-primary': type === 'L',
-                  'text-e1h2blue': type === 'H',
-                  'text-e1evgreen': type === 'E',
-                },
-              ]"
-              >{{ useFuelName(type) }}</span
+              v-if="fuelTypeList.length >= 3"
+              class="fs-12 font-bold text-gray-600 md:!text-lg"
             >
-          </template>
+              전체
+            </span>
+            <template v-else>
+              <span
+                v-for="type in fuelTypeList"
+                :key="type"
+                :class="[
+                  'fs-12 font-bold md:!text-lg',
+                  {
+                    'text-primary': type === 'L',
+                    'text-e1h2blue': type === 'H',
+                    'text-e1evgreen': type === 'E',
+                  },
+                ]"
+                >{{ useFuelName(type) }}</span
+              >
+            </template>
+          </span>
 
           <span class="bar fs-14 float-end text-gray-600">
             <span>당첨자발표</span>

@@ -75,7 +75,7 @@ export const useHookNaverAuthCallback = (isSelf: boolean = false) => {
           window.location.origin,
         );
 
-        window.close();
+        $kakaotalkClose();
       }
     }
   });

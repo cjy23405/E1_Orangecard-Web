@@ -46,7 +46,7 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: "2024-04-03",
-  css: ["@/assets/css/morpheus-common.css"],
+  css: ["@/assets/css/common.css"],
   devServer: {
     https: {
       key: "./.https/STAR.e1orangecard.com_key.pem",
@@ -60,6 +60,10 @@ export default defineNuxtConfig({
       fix: true,
     },
   },
+  gtag: {
+    enabled: IS_DEV !== "true",
+    id: process.env.GTAG_ID,
+  },
   hooks: {
     // 확장 path 추가
     "pages:extend"(pages: NuxtPage[]) {
@@ -67,6 +71,11 @@ export default defineNuxtConfig({
         name: "kakaoPermalink",
         path: "/m/join/kakao/permalink",
         file: resolve(__dirname, "pages/etc/kakao-permalink/index.vue"),
+      });
+      pages.push({
+        name: "kakaoPermalinkEvent",
+        path: "/m/event/:id",
+        file: resolve(__dirname, "pages/etc/kakao-permalink/event/index.vue"),
       });
     },
 
@@ -83,6 +92,7 @@ export default defineNuxtConfig({
 
       // 카카오 퍼머링크
       routes.add("/m/join/kakao/permalink");
+      routes.add("/m/event/869");
 
       // 제휴혜택 > 제휴서비스
       const associationServiceList = await getAssociationServiceList();
@@ -139,6 +149,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "pinia-plugin-persistedstate/nuxt",
     "shadcn-nuxt",
+    "nuxt-gtag",
   ],
   nitro: {
     preset: "nitro-prerender",

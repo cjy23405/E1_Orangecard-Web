@@ -98,24 +98,30 @@ export const $clearForgotSession = () => {
   }
 };
 
-// clear sign up session store
+// clear titiTalk session
 export const $clearTitiTalkSession = () => {
   const titiTalkAuth = useSessionStorage<string | null>("titiTalkAuth", null);
+  const titiTalkLogin = useSessionStorage<string | null>("titiTalkLogin", null);
   const locale = useLocale();
   const reg = new RegExp(`(^|^/${locale})(/titi-talk|/auth)`);
   const route = useRoute();
 
-  if (!reg.test(route.fullPath) && titiTalkAuth.value) {
-    titiTalkAuth.value = null;
+  if (!reg.test(route.fullPath)) {
+    if (titiTalkAuth.value) {
+      titiTalkAuth.value = null;
+    }
+    if (titiTalkLogin.value) {
+      titiTalkLogin.value = null;
+    }
   }
 };
 
-// clear sign up session store
+// clear etc session
 export const $clearEtcSession = () => {
   const etcInflow = useSessionStorage<string | null>("etcInflow", null);
   const locale = useLocale();
   const reg = new RegExp(
-    `(^|^/${locale})(/etc|/survey|/m/join/kakao/permalink)`,
+    `(^|^/${locale})(/etc|/survey|/m/join/kakao/permalink|/auth/kakao)`,
   );
   const route = useRoute();
 
@@ -202,6 +208,23 @@ export const $setSEO = ({
       { name: "twitter:image", content: metaImage },
     ],
   });
+};
+
+// kakaotalk window close
+export const $kakaotalkClose = () => {
+  if (!window) return;
+
+  const userAgent = window.navigator.userAgent;
+  const isIos = Boolean(userAgent.match(/iPod|iPhone|iPad/));
+  const isAndroid = Boolean(userAgent.match(/Android/));
+
+  if (isIos) {
+    window.location.href = "kakaotalk://inappbrowser/close";
+  } else if (isAndroid) {
+    window.location.href = "kakaoweb://closeBrowser";
+  }
+
+  window.close();
 };
 
 // ########################################
@@ -714,4 +737,13 @@ export const useDescription = (html: string) => {
     .replace(/\s+/g, " ");
 
   return text.slice(0, text.length > 120 ? 120 : text.length);
+};
+
+// 카카오톡 브라우저 여부
+export const useIsKakaoTalk = () => {
+  if (!window) return false;
+
+  const userAgent = window.navigator.userAgent;
+
+  return Boolean(userAgent.match("KAKAOTALK"));
 };

@@ -1550,7 +1550,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/eslint@npm:^0.6.1":
+"@nuxt/eslint@npm:0.6.2":
   version: 0.6.2
   resolution: "@nuxt/eslint@npm:0.6.2"
   dependencies:
@@ -1701,7 +1701,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/color-mode@npm:^3.5.2":
+"@nuxtjs/color-mode@npm:3.5.2":
   version: 3.5.2
   resolution: "@nuxtjs/color-mode@npm:3.5.2"
   dependencies:
@@ -1713,7 +1713,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/i18n@npm:^9.0.0":
+"@nuxtjs/i18n@npm:9.1.0":
   version: 9.1.0
   resolution: "@nuxtjs/i18n@npm:9.1.0"
   dependencies:
@@ -1744,7 +1744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/tailwindcss@npm:^6.12.2":
+"@nuxtjs/tailwindcss@npm:6.12.2":
   version: 6.12.2
   resolution: "@nuxtjs/tailwindcss@npm:6.12.2"
   dependencies:
@@ -1927,7 +1927,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.7.0":
+"@pinia/nuxt@npm:0.7.0":
   version: 0.7.0
   resolution: "@pinia/nuxt@npm:0.7.0"
   dependencies:
@@ -1958,7 +1958,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@popperjs/core@npm:^2.11.8":
+"@popperjs/core@npm:2.11.8":
   version: 2.11.8
   resolution: "@popperjs/core@npm:2.11.8"
   checksum: 10c0/4681e682abc006d25eb380d0cf3efc7557043f53b6aea7a5057d0d1e7df849a00e281cd8ea79c902a35a414d7919621fc2ba293ecec05f413598e0b23d5a1e63
@@ -2336,7 +2336,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/vue-query@npm:^5.59.20":
+"@tanstack/vue-query@npm:5.61.5":
   version: 5.61.5
   resolution: "@tanstack/vue-query@npm:5.61.5"
   dependencies:
@@ -2372,14 +2372,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/crypto-js@npm:^4.2.2":
+"@types/crypto-js@npm:4.2.2":
   version: 4.2.2
   resolution: "@types/crypto-js@npm:4.2.2"
   checksum: 10c0/760a2078f36f2a3a1089ef367b0d13229876adcf4bcd6e8824d00d9e9bfad8118dc7e6a3cc66322b083535e12be3a29044ccdc9603bfb12519ff61551a3322c6
   languageName: node
   linkType: hard
 
-"@types/eslint-plugin-tailwindcss@npm:^3":
+"@types/eslint-plugin-tailwindcss@npm:3.17.0":
   version: 3.17.0
   resolution: "@types/eslint-plugin-tailwindcss@npm:3.17.0"
   dependencies:
@@ -2414,7 +2414,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jsdom@npm:^21.1.7":
+"@types/jsdom@npm:21.1.7":
   version: 21.1.7
   resolution: "@types/jsdom@npm:21.1.7"
   dependencies:
@@ -2439,7 +2439,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/luxon@npm:^3.4.2":
+"@types/luxon@npm:3.4.2":
   version: 3.4.2
   resolution: "@types/luxon@npm:3.4.2"
   checksum: 10c0/d835467de3daf7e17ba78b50bb5a14efd94272439ca067990d71332a54b311544459c69623eddd243b511b28d70194c9591a9ee8cf9c038962c965f991affd7e
@@ -2672,7 +2672,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vee-validate/zod@npm:^4.15.0":
+"@vee-validate/zod@npm:4.15.0":
   version: 4.15.0
   resolution: "@vee-validate/zod@npm:4.15.0"
   dependencies:
@@ -3070,6 +3070,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:12.4.0":
+  version: 12.4.0
+  resolution: "@vueuse/core@npm:12.4.0"
+  dependencies:
+    "@types/web-bluetooth": "npm:^0.0.20"
+    "@vueuse/metadata": "npm:12.4.0"
+    "@vueuse/shared": "npm:12.4.0"
+    vue: "npm:^3.5.13"
+  checksum: 10c0/21d37cc7ca9e358d356ee6f2dc5bd5f1c9431e6c930ab56f27bcd751daf0567b4d85c449f7c8e1ee13a087fbdcb949ad3b35862e3d888729f1e2003f519587ad
+  languageName: node
+  linkType: hard
+
 "@vueuse/core@npm:^10.11.0":
   version: 10.11.1
   resolution: "@vueuse/core@npm:10.11.1"
@@ -3079,18 +3091,6 @@ __metadata:
     "@vueuse/shared": "npm:10.11.1"
     vue-demi: "npm:>=0.14.8"
   checksum: 10c0/6a974c1510ce84e652e3d180a4f4373e37e59a5ec025a7a8cec7f144a4ccff25dbdd82e3143ffb057323f467a1076b39da30953981e822c4bd41a7841121afee
-  languageName: node
-  linkType: hard
-
-"@vueuse/core@npm:^12.4.0":
-  version: 12.4.0
-  resolution: "@vueuse/core@npm:12.4.0"
-  dependencies:
-    "@types/web-bluetooth": "npm:^0.0.20"
-    "@vueuse/metadata": "npm:12.4.0"
-    "@vueuse/shared": "npm:12.4.0"
-    vue: "npm:^3.5.13"
-  checksum: 10c0/21d37cc7ca9e358d356ee6f2dc5bd5f1c9431e6c930ab56f27bcd751daf0567b4d85c449f7c8e1ee13a087fbdcb949ad3b35862e3d888729f1e2003f519587ad
   languageName: node
   linkType: hard
 
@@ -3115,7 +3115,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/nuxt@npm:^11.2.0":
+"@vueuse/nuxt@npm:11.3.0":
   version: 11.3.0
   resolution: "@vueuse/nuxt@npm:11.3.0"
   dependencies:
@@ -3848,14 +3848,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"class-transformer@npm:^0.5.1":
+"class-transformer@npm:0.5.1":
   version: 0.5.1
   resolution: "class-transformer@npm:0.5.1"
   checksum: 10c0/19809914e51c6db42c036166839906420bb60367df14e15f49c45c8c1231bf25ae661ebe94736ee29cc688b77101ef851a8acca299375cc52fc141b64acde18a
   languageName: node
   linkType: hard
 
-"class-variance-authority@npm:^0.7.0":
+"class-variance-authority@npm:0.7.1":
   version: 0.7.1
   resolution: "class-variance-authority@npm:0.7.1"
   dependencies:
@@ -3928,7 +3928,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^2.1.1":
+"clsx@npm:2.1.1, clsx@npm:^2.1.1":
   version: 2.1.1
   resolution: "clsx@npm:2.1.1"
   checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
@@ -4235,7 +4235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"crypto-js@npm:^4.2.0":
+"crypto-js@npm:4.2.0":
   version: 4.2.0
   resolution: "crypto-js@npm:4.2.0"
   checksum: 10c0/8fbdf9d56f47aea0794ab87b0eb9833baf80b01a7c5c1b0edc7faf25f662fb69ab18dc2199e2afcac54670ff0cd9607a9045a3f7a80336cccd18d77a55b9fdf0
@@ -4689,7 +4689,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:^3.2.4":
+"dompurify@npm:3.2.4":
   version: 3.2.4
   resolution: "dompurify@npm:3.2.4"
   dependencies:
@@ -4750,61 +4750,62 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "e1orangecard_web@workspace:."
   dependencies:
-    "@eslint/js": "npm:^9.14.0"
-    "@nuxt/eslint": "npm:^0.6.1"
-    "@nuxtjs/color-mode": "npm:^3.5.2"
-    "@nuxtjs/i18n": "npm:^9.0.0"
-    "@nuxtjs/tailwindcss": "npm:^6.12.2"
-    "@pinia/nuxt": "npm:^0.7.0"
-    "@popperjs/core": "npm:^2.11.8"
-    "@tanstack/vue-query": "npm:^5.59.20"
-    "@types/crypto-js": "npm:^4.2.2"
-    "@types/eslint-plugin-tailwindcss": "npm:^3"
-    "@types/jsdom": "npm:^21.1.7"
-    "@types/luxon": "npm:^3.4.2"
-    "@vee-validate/zod": "npm:^4.15.0"
-    "@vueuse/core": "npm:^12.4.0"
-    "@vueuse/nuxt": "npm:^11.2.0"
-    class-transformer: "npm:^0.5.1"
-    class-variance-authority: "npm:^0.7.0"
-    clsx: "npm:^2.1.1"
-    crypto-js: "npm:^4.2.0"
-    dompurify: "npm:^3.2.4"
-    embla-carousel: "npm:^8.5.1"
-    embla-carousel-autoplay: "npm:^8.5.1"
-    embla-carousel-vue: "npm:^8.5.1"
-    eslint: "npm:^9.14.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-jsonc: "npm:^2.18.1"
-    eslint-plugin-prettier: "npm:^5.2.1"
-    eslint-plugin-tailwindcss: "npm:^3.17.5"
-    eslint-plugin-vue: "npm:^9.31.0"
-    husky: "npm:^9.1.6"
-    jsdom: "npm:^26.0.0"
-    json-stable-stringify: "npm:^1.2.1"
-    lint-staged: "npm:^15.2.10"
-    lucide-vue-next: "npm:^0.460.0"
-    luxon: "npm:^3.5.0"
-    nuxt: "npm:^3.14.159"
-    pinia: "npm:^2.2.6"
-    pinia-plugin-persistedstate: "npm:^4.1.3"
-    prettier: "npm:^3.3.3"
-    prettier-plugin-tailwindcss: "npm:^0.6.9"
-    radix-vue: "npm:^1.9.9"
-    reflect-metadata: "npm:^0.2.2"
-    shadcn-nuxt: "npm:^0.11.2"
-    tailwind-merge: "npm:^2.5.4"
-    tailwindcss-animate: "npm:^1.0.7"
+    "@eslint/js": "npm:9.15.0"
+    "@nuxt/eslint": "npm:0.6.2"
+    "@nuxtjs/color-mode": "npm:3.5.2"
+    "@nuxtjs/i18n": "npm:9.1.0"
+    "@nuxtjs/tailwindcss": "npm:6.12.2"
+    "@pinia/nuxt": "npm:0.7.0"
+    "@popperjs/core": "npm:2.11.8"
+    "@tanstack/vue-query": "npm:5.61.5"
+    "@types/crypto-js": "npm:4.2.2"
+    "@types/eslint-plugin-tailwindcss": "npm:3.17.0"
+    "@types/jsdom": "npm:21.1.7"
+    "@types/luxon": "npm:3.4.2"
+    "@vee-validate/zod": "npm:4.15.0"
+    "@vueuse/core": "npm:12.4.0"
+    "@vueuse/nuxt": "npm:11.3.0"
+    class-transformer: "npm:0.5.1"
+    class-variance-authority: "npm:0.7.1"
+    clsx: "npm:2.1.1"
+    crypto-js: "npm:4.2.0"
+    dompurify: "npm:3.2.4"
+    embla-carousel: "npm:8.5.1"
+    embla-carousel-autoplay: "npm:8.5.1"
+    embla-carousel-vue: "npm:8.5.1"
+    eslint: "npm:9.15.0"
+    eslint-config-prettier: "npm:9.1.0"
+    eslint-plugin-jsonc: "npm:2.18.2"
+    eslint-plugin-prettier: "npm:5.2.1"
+    eslint-plugin-tailwindcss: "npm:3.17.5"
+    eslint-plugin-vue: "npm:9.31.0"
+    husky: "npm:9.1.7"
+    jsdom: "npm:26.0.0"
+    json-stable-stringify: "npm:1.2.1"
+    lint-staged: "npm:15.2.10"
+    lucide-vue-next: "npm:0.460.0"
+    luxon: "npm:3.5.0"
+    nuxt: "npm:3.14.1592"
+    nuxt-gtag: "npm:3.0.2"
+    pinia: "npm:2.2.7"
+    pinia-plugin-persistedstate: "npm:4.1.3"
+    prettier: "npm:3.4.1"
+    prettier-plugin-tailwindcss: "npm:0.6.9"
+    radix-vue: "npm:1.9.10"
+    reflect-metadata: "npm:0.2.2"
+    shadcn-nuxt: "npm:0.11.3"
+    tailwind-merge: "npm:2.5.5"
+    tailwindcss-animate: "npm:1.0.7"
     typescript: "npm:5.6.3"
-    typescript-eslint: "npm:^8.14.0"
-    v-calendar: "npm:^3.1.2"
-    vee-validate: "npm:^4.15.0"
-    vite-plugin-eslint2: "npm:^5.0.2"
-    vue: "npm:^3.5.12"
-    vue-router: "npm:^4.4.5"
-    vue-tsc: "npm:^2.1.10"
-    vue3-lottie: "npm:^3.3.1"
-    zod: "npm:^3.24.1"
+    typescript-eslint: "npm:8.16.0"
+    v-calendar: "npm:3.1.2"
+    vee-validate: "npm:4.15.0"
+    vite-plugin-eslint2: "npm:5.0.3"
+    vue: "npm:3.5.13"
+    vue-router: "npm:4.5.0"
+    vue-tsc: "npm:2.1.10"
+    vue3-lottie: "npm:3.3.1"
+    zod: "npm:3.24.1"
   languageName: unknown
   linkType: soft
 
@@ -4829,7 +4830,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"embla-carousel-autoplay@npm:^8.5.1":
+"embla-carousel-autoplay@npm:8.5.1":
   version: 8.5.1
   resolution: "embla-carousel-autoplay@npm:8.5.1"
   peerDependencies:
@@ -4847,7 +4848,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"embla-carousel-vue@npm:^8.5.1":
+"embla-carousel-vue@npm:8.5.1":
   version: 8.5.1
   resolution: "embla-carousel-vue@npm:8.5.1"
   dependencies:
@@ -4859,7 +4860,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"embla-carousel@npm:8.5.1, embla-carousel@npm:^8.5.1":
+"embla-carousel@npm:8.5.1":
   version: 8.5.1
   resolution: "embla-carousel@npm:8.5.1"
   checksum: 10c0/457f3ae6f13a55504a61b4cb57529fbc33102a921cbb2f234d6b53709ded03b8cf46fb7a1c95d51d9f37a2348013c6a4479705367b0b75bfb83862f52dd23d7f
@@ -5238,7 +5239,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^9.1.0":
+"eslint-config-prettier@npm:9.1.0":
   version: 9.1.0
   resolution: "eslint-config-prettier@npm:9.1.0"
   peerDependencies:
@@ -5325,7 +5326,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsonc@npm:^2.18.1":
+"eslint-plugin-jsonc@npm:2.18.2":
   version: 2.18.2
   resolution: "eslint-plugin-jsonc@npm:2.18.2"
   dependencies:
@@ -5343,7 +5344,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^5.2.1":
+"eslint-plugin-prettier@npm:5.2.1":
   version: 5.2.1
   resolution: "eslint-plugin-prettier@npm:5.2.1"
   dependencies:
@@ -5380,7 +5381,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-tailwindcss@npm:^3.17.5":
+"eslint-plugin-tailwindcss@npm:3.17.5":
   version: 3.17.5
   resolution: "eslint-plugin-tailwindcss@npm:3.17.5"
   dependencies:
@@ -5418,7 +5419,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^9.31.0":
+"eslint-plugin-vue@npm:9.31.0, eslint-plugin-vue@npm:^9.31.0":
   version: 9.31.0
   resolution: "eslint-plugin-vue@npm:9.31.0"
   dependencies:
@@ -5482,7 +5483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.14.0":
+"eslint@npm:9.15.0":
   version: 9.15.0
   resolution: "eslint@npm:9.15.0"
   dependencies:
@@ -6470,7 +6471,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^9.1.6":
+"husky@npm:9.1.7":
   version: 9.1.7
   resolution: "husky@npm:9.1.7"
   bin:
@@ -6966,7 +6967,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsdom@npm:^26.0.0":
+"jsdom@npm:26.0.0":
   version: 26.0.0
   resolution: "jsdom@npm:26.0.0"
   dependencies:
@@ -7063,7 +7064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-stable-stringify@npm:^1.2.1":
+"json-stable-stringify@npm:1.2.1":
   version: 1.2.1
   resolution: "json-stable-stringify@npm:1.2.1"
   dependencies:
@@ -7282,7 +7283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^15.2.10":
+"lint-staged@npm:15.2.10":
   version: 15.2.10
   resolution: "lint-staged@npm:15.2.10"
   dependencies:
@@ -7474,7 +7475,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-vue-next@npm:^0.460.0":
+"lucide-vue-next@npm:0.460.0":
   version: 0.460.0
   resolution: "lucide-vue-next@npm:0.460.0"
   peerDependencies:
@@ -7483,7 +7484,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:^3.5.0":
+"luxon@npm:3.5.0":
   version: 3.5.0
   resolution: "luxon@npm:3.5.0"
   checksum: 10c0/335789bba95077db831ef99894edadeb23023b3eb2137a1b56acd0d290082b691cf793143d69e30bc069ec95f0b49f36419f48e951c68014f19ffe12045e3494
@@ -8185,7 +8186,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt@npm:^3.14.159":
+"nuxt-gtag@npm:3.0.2":
+  version: 3.0.2
+  resolution: "nuxt-gtag@npm:3.0.2"
+  dependencies:
+    "@nuxt/kit": "npm:^3.14.1592"
+    defu: "npm:^6.1.4"
+    pathe: "npm:^1.1.2"
+    ufo: "npm:^1.5.4"
+  checksum: 10c0/51816a40a62189e0848edfbaa6ff66c4b416d5b3bd3c53d90830e514faf265717fcbbfce919da2668250b2b5b3c752113e3769e608e1e6902a84c87185288bed
+  languageName: node
+  linkType: hard
+
+"nuxt@npm:3.14.1592":
   version: 3.14.1592
   resolution: "nuxt@npm:3.14.1592"
   dependencies:
@@ -8732,7 +8745,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia-plugin-persistedstate@npm:^4.1.3":
+"pinia-plugin-persistedstate@npm:4.1.3":
   version: 4.1.3
   resolution: "pinia-plugin-persistedstate@npm:4.1.3"
   dependencies:
@@ -8752,7 +8765,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:^2.2.6":
+"pinia@npm:2.2.7, pinia@npm:^2.2.6":
   version: 2.2.7
   resolution: "pinia@npm:2.2.7"
   dependencies:
@@ -9234,7 +9247,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.6.9":
+"prettier-plugin-tailwindcss@npm:0.6.9":
   version: 0.6.9
   resolution: "prettier-plugin-tailwindcss@npm:0.6.9"
   peerDependencies:
@@ -9292,7 +9305,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.3.3":
+"prettier@npm:3.4.1":
   version: 3.4.1
   resolution: "prettier@npm:3.4.1"
   bin:
@@ -9377,7 +9390,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"radix-vue@npm:^1.9.9":
+"radix-vue@npm:1.9.10":
   version: 1.9.10
   resolution: "radix-vue@npm:1.9.10"
   dependencies:
@@ -9552,7 +9565,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reflect-metadata@npm:^0.2.2":
+"reflect-metadata@npm:0.2.2":
   version: 0.2.2
   resolution: "reflect-metadata@npm:0.2.2"
   checksum: 10c0/1cd93a15ea291e420204955544637c264c216e7aac527470e393d54b4bb075f10a17e60d8168ec96600c7e0b9fcc0cb0bb6e91c3fbf5b0d8c9056f04e6ac1ec2
@@ -10001,7 +10014,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shadcn-nuxt@npm:^0.11.2":
+"shadcn-nuxt@npm:0.11.3":
   version: 0.11.3
   resolution: "shadcn-nuxt@npm:0.11.3"
   dependencies:
@@ -10554,14 +10567,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwind-merge@npm:^2.5.4":
+"tailwind-merge@npm:2.5.5":
   version: 2.5.5
   resolution: "tailwind-merge@npm:2.5.5"
   checksum: 10c0/32614dd2b4ddd4fab070d5ec569e6da00e2b34269b9ac2f2ff16733cef29a076c8e2210fbfc1904d7983a8fdb6b3e63d18ca117645f21b12ca7bcf8fe3507241
   languageName: node
   linkType: hard
 
-"tailwindcss-animate@npm:^1.0.7":
+"tailwindcss-animate@npm:1.0.7":
   version: 1.0.7
   resolution: "tailwindcss-animate@npm:1.0.7"
   peerDependencies:
@@ -10855,7 +10868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.14.0":
+"typescript-eslint@npm:8.16.0":
   version: 8.16.0
   resolution: "typescript-eslint@npm:8.16.0"
   dependencies:
@@ -11220,7 +11233,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"v-calendar@npm:^3.1.2":
+"v-calendar@npm:3.1.2":
   version: 3.1.2
   resolution: "v-calendar@npm:3.1.2"
   dependencies:
@@ -11254,7 +11267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vee-validate@npm:4.15.0, vee-validate@npm:^4.15.0":
+"vee-validate@npm:4.15.0":
   version: 4.15.0
   resolution: "vee-validate@npm:4.15.0"
   dependencies:
@@ -11342,7 +11355,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-eslint2@npm:^5.0.2":
+"vite-plugin-eslint2@npm:5.0.3":
   version: 5.0.3
   resolution: "vite-plugin-eslint2@npm:5.0.3"
   dependencies:
@@ -11620,7 +11633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router@npm:^4.4.5":
+"vue-router@npm:4.5.0, vue-router@npm:^4.4.5":
   version: 4.5.0
   resolution: "vue-router@npm:4.5.0"
   dependencies:
@@ -11640,7 +11653,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-tsc@npm:^2.1.10":
+"vue-tsc@npm:2.1.10":
   version: 2.1.10
   resolution: "vue-tsc@npm:2.1.10"
   dependencies:
@@ -11655,7 +11668,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue3-lottie@npm:^3.3.1":
+"vue3-lottie@npm:3.3.1":
   version: 3.3.1
   resolution: "vue3-lottie@npm:3.3.1"
   dependencies:
@@ -11668,7 +11681,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.4, vue@npm:^3.5.12, vue@npm:^3.5.13":
+"vue@npm:3.5.13, vue@npm:^3.4, vue@npm:^3.5.13":
   version: 3.5.13
   resolution: "vue@npm:3.5.13"
   dependencies:
@@ -11995,7 +12008,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.24.1":
+"zod@npm:3.24.1":
   version: 3.24.1
   resolution: "zod@npm:3.24.1"
   checksum: 10c0/0223d21dbaa15d8928fe0da3b54696391d8e3e1e2d0283a1a070b5980a1dbba945ce631c2d1eccc088fdbad0f2dfa40155590bf83732d3ac4fcca2cc9237591b

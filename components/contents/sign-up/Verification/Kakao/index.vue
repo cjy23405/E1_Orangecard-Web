@@ -1,18 +1,31 @@
 <script setup lang="ts">
+// isKakaoTalk
+const isKakaoTalk = useIsKakaoTalk();
+
 // hook
-const hookKakaoAuth = useHookKakaoAuth("signUpAuthenticationPopup");
+const hookKakaoAuth = useHookKakaoAuth(
+  isKakaoTalk ? "_self" : "signUpAuthenticationPopup",
+);
+
+// session
+const kakaoSelfLogin = useSessionStorage<string | null>("kakaoSelfLogin", null);
 
 // ref
 const raw = useTemplateRef("raw");
 
 // 카카오 인증
 const kakaoAuth = () => {
-  hookKakaoAuth
-    ?.open()
-    .then((data) => {
-      raw.value?.kakaoCheck(data);
-    })
-    .catch(() => {});
+  if (isKakaoTalk) {
+    kakaoSelfLogin.value = "signUp";
+    hookKakaoAuth?.open();
+  } else {
+    hookKakaoAuth
+      ?.open()
+      .then((data) => {
+        raw.value?.kakaoCheck(data);
+      })
+      .catch(() => {});
+  }
 };
 
 // 카카오 인증 클릭

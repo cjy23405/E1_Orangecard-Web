@@ -110,7 +110,7 @@ const raw = useTemplateRef("raw");
 
   <ContentsSignUpCheckSession
     type="KAKAO"
-    :check-path="`(${useEtcRoute('/sign-up')}|${useEtcRoute('/login')}|${useEtcRoute('/sign-up/kakao-enter-id')}|/m/join/kakao/permalink?.+|/etc/kakao-permalink?.+)`"
+    :check-path="`(${useEtcRoute('/sign-up')}|${useEtcRoute('/login')}|${useEtcRoute('/sign-up/kakao-enter-id')}|/auth/kakao/callback)`"
     :denied-path="
       session?.fromLogin ? useEtcRoute('/login') : useEtcRoute('/sign-up')
     "

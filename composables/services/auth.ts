@@ -199,9 +199,15 @@ export const useApiAuthLoginSetup = ({ type, data, callback }: LoginSetup) => {
   };
 
   // session
+  const kakaoSelfLogin = useSessionStorage<string | null>(
+    "kakaoSelfLogin",
+    null,
+  );
+  const titiTalkLogin = useSessionStorage<string | null>("titiTalkLogin", null);
   const etcInflow = useSessionStorage<string | null>("etcInflow", null);
 
   // route
+  const localePath = useLocalePath();
   const router = useRouter();
   const route = useRoute();
 
@@ -209,23 +215,36 @@ export const useApiAuthLoginSetup = ({ type, data, callback }: LoginSetup) => {
   const accessToken = data.accessToken || "";
   const refreshToken = data.refreshToken || "";
   const timestamp = DateTime.now().toMillis();
-  const loginInfo = data
-    ? (() => {
-        const notKeys = ["accessToken", "refreshToken"];
-        return useObjectFilter({ ...data }, (el, key) => {
-          return notKeys.indexOf(String(key)) === -1;
-        });
-      })()
-    : null;
+  const loginInfo = (
+    data
+      ? (() => {
+          const notKeys = ["accessToken", "refreshToken"];
+          return useObjectFilter({ ...data }, (el, key) => {
+            return notKeys.indexOf(String(key)) === -1;
+          });
+        })()
+      : null
+  ) as LoginInfo;
   const { returnurl } = route.query;
 
   stores.auth.$setAccessToken(accessToken);
   stores.auth.$setRefreshToken(refreshToken);
   stores.auth.$setTimestamp(timestamp);
-  stores.auth.$setLoginInfo(loginInfo as LoginInfo);
+  stores.auth.$setLoginInfo(loginInfo);
   stores.auth.$setLoginType(type);
 
-  if (callback) {
+  if (
+    !titiTalkLogin.value &&
+    !kakaoSelfLogin.value &&
+    loginInfo?.pwdChangeReq
+  ) {
+    router.replace({
+      path: localePath(useEtcRoute("/login/change-pw")),
+      query: {
+        returnurl: typeof returnurl === "string" ? returnurl : undefined,
+      },
+    });
+  } else if (callback) {
     callback(type, data);
   } else if (etcInflow.value) {
     router.replace(etcInflow.value);

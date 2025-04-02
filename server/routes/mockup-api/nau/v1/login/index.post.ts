@@ -29,6 +29,7 @@ export default defineEventHandler(() => {
       lTierCd: "NOR",
       eTierNm: "일반",
       lTierNm: "일반",
+      pwdChangeReq: false,
     },
   };
 

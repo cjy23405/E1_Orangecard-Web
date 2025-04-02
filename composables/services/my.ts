@@ -5,7 +5,8 @@ import type {
   MyProfileEditRequest,
   MyProfileEditResponse,
   MyRenameRequest,
-  MyNewPasswordRequest,
+  MyCreatePasswordRequest,
+  MyChangePasswordRequest,
   MySnsLinkRequest,
   MyDeleteAccountInfoResponse,
   MyDeleteAccountRequest,
@@ -88,13 +89,29 @@ export const useApiMyRename = (key: number | string = "") => {
 };
 
 // 비밀번호 변경
-export const useApiMyNewPassword = (key: number | string = "") => {
-  const endpoint = useApiEndpoint("myNewPassword");
+export const useApiMyCreatePassword = (key: number | string = "") => {
+  const endpoint = useApiEndpoint("myCreatePassword");
 
   return useMutation({
-    mutationKey: ["myNewPassword", key],
-    mutationFn: (data: MyNewPasswordRequest) => {
-      return $api<MyNewPasswordRequest>(endpoint, {
+    mutationKey: ["myCreatePassword", key],
+    mutationFn: (data: MyCreatePasswordRequest) => {
+      return $api<MyCreatePasswordRequest>(endpoint, {
+        body: {
+          data,
+        },
+      });
+    },
+  });
+};
+
+// 비밀번호 변경(기존 비밀번호 포함)
+export const useApiMyChangePassword = (key: number | string = "") => {
+  const endpoint = useApiEndpoint("myChangePassword");
+
+  return useMutation({
+    mutationKey: ["myChangePassword", key],
+    mutationFn: (data: MyChangePasswordRequest) => {
+      return $api<MyChangePasswordRequest>(endpoint, {
         body: {
           data,
         },
@@ -260,6 +277,22 @@ export const useApiMyAgreeEdit = (key: number | string = "") => {
     mutationKey: ["agreeEdit", key],
     mutationFn: (data: MyAgreeEditRequest) => {
       return $api<MyAgreeEditRequest, MyAgreeEditResponse>(endpoint, {
+        body: {
+          data,
+        },
+      });
+    },
+  });
+};
+
+// 비밀번호 변경 건너뛰기
+export const useApiMyPasswordChangeSkip = (key: number | string = "") => {
+  const endpoint = useApiEndpoint("myPasswordChangeSkip");
+
+  return useMutation({
+    mutationKey: ["myPasswordChangeSkip", key],
+    mutationFn: (data: unknown = {}) => {
+      return $api(endpoint, {
         body: {
           data,
         },

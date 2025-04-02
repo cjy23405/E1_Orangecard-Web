@@ -31,10 +31,7 @@ const ciCheck = (ciKey: string, session: SessionSignUp) => {
     },
     {
       onSuccess: (ciCheckData) => {
-        if (ciCheckData.header?.code === "B0013") {
-          stores.session.$setSignUp(session);
-          router.push(localePath(useEtcRoute("/sign-up/agreements")));
-        } else {
+        if (ciCheckData.data?.customerKey && ciCheckData.data?.loginId) {
           alertOpen({
             message: useT("alertMessage.004"),
             buttons: [
@@ -47,6 +44,9 @@ const ciCheck = (ciKey: string, session: SessionSignUp) => {
               },
             ],
           });
+        } else {
+          stores.session.$setSignUp(session);
+          router.push(localePath(useEtcRoute("/sign-up/agreements")));
         }
       },
       onError: (err) => {
@@ -138,16 +138,16 @@ const naverAuth = () => {
         },
         {
           onSuccess: (snsCheckData) => {
-            if (snsCheckData.header?.code === "C0010") {
-              phoneAuth("NAVER", data.id);
-            } else {
+            if (snsCheckData.data?.loginId) {
               stores.session.$setSignUp({
                 type: "NAVER",
-                loginId: snsCheckData.data?.loginId || "",
+                loginId: snsCheckData.data.loginId,
               });
               router.push(
                 localePath(useEtcRoute("/sign-up/sns-account-exists")),
               );
+            } else {
+              phoneAuth("NAVER", data.id);
             }
           },
           onError: (err) => {

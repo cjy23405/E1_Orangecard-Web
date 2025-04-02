@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* uracle pjt-team */
-@import "morpheus-reset.min.css";
+@import "reset.min.css";
 
 @tailwind components;
 
@@ -114,6 +114,7 @@ body > div:first-child:not(#teleports) {
   .nodata p {
     @apply mt-[1.2rem] fs-16 text-gray-700;
   }
+  .layoutDefault:has(#maintenance),
   .layoutEtc:has(#surveyPage),
   .layoutEtc:has(#appDownloadGuidePage) {
     height: 100%;

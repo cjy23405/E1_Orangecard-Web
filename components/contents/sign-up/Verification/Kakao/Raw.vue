@@ -37,6 +37,8 @@ const kakaoSignUp = ({
   id?: string;
   phone?: string;
 }) => {
+  const cn = useSessionStorage<string | null>("campaignNo", null);
+  const campaignNo = cn.value || undefined;
   const email =
     (data.user.kakao_account.is_email_valid &&
       data.user.kakao_account.is_email_verified &&
@@ -62,6 +64,7 @@ const kakaoSignUp = ({
     {
       snsType: "KAKAO",
       snsId: String(data.user.id),
+      campaignNo,
       loginId,
       name: data.user.kakao_account.name,
       cellPhone,
@@ -105,9 +108,11 @@ const kakaoSignUp = ({
           fromVerifyPhone,
           completeId: successData.data.loginId,
         });
+        cn.value = null;
         router.push(localePath(useEtcRoute("/sign-up/complete")));
       },
       onError: (err) => {
+        cn.value = null;
         alertOpen({
           message: useApiGetErrorMessage(err.data),
         });
@@ -230,9 +235,48 @@ const kakaoCheck = (data: KakaoAuthData, fromLogin: boolean = false) => {
           },
           {
             onSuccess: (snsCheckData) => {
-              if (ciCheckData.header?.code === "B0013") {
+              if (ciCheckData.data?.customerKey && ciCheckData.data?.loginId) {
+                // ci 가입 계정 O
+                stores.session.$setSignUp({
+                  type: "KAKAO",
+                  data: {
+                    token: data.token,
+                    user: data.user,
+                    agree: data.agree,
+                    ciCheck: ciCheckData.data,
+                  },
+                  fromLogin,
+                });
+
+                if (snsCheckData.data?.loginId) {
+                  // 연동 O
+                  router.push(
+                    localePath(useEtcRoute("/sign-up/kakao-account-exists")),
+                  );
+                } else {
+                  // 연동 X
+                  router.push(
+                    localePath(useEtcRoute("/sign-up/kakao-connect")),
+                  );
+                }
+              } else {
                 // ci 가입 계정 X
-                if (snsCheckData.header?.code === "C0010") {
+                if (snsCheckData.data?.loginId) {
+                  // 연동 O
+                  stores.session.$setSignUp({
+                    type: "KAKAO",
+                    data: {
+                      token: data.token,
+                      user: data.user,
+                      agree: data.agree,
+                      snsCheck: snsCheckData.data,
+                    },
+                    fromLogin,
+                  });
+                  router.push(
+                    localePath(useEtcRoute("/sign-up/kakao-connect-exists")),
+                  );
+                } else {
                   // 연동 X
                   const birthday =
                     data.user.kakao_account.birthyear +
@@ -254,45 +298,6 @@ const kakaoCheck = (data: KakaoAuthData, fromLogin: boolean = false) => {
                       message: useT("alertMessage.003"),
                     });
                   }
-                } else {
-                  // 연동 O
-                  stores.session.$setSignUp({
-                    type: "KAKAO",
-                    data: {
-                      token: data.token,
-                      user: data.user,
-                      agree: data.agree,
-                      snsCheck: snsCheckData.data,
-                    },
-                    fromLogin,
-                  });
-                  router.push(
-                    localePath(useEtcRoute("/sign-up/kakao-connect-exists")),
-                  );
-                }
-              } else {
-                // ci 가입 계정 O
-                stores.session.$setSignUp({
-                  type: "KAKAO",
-                  data: {
-                    token: data.token,
-                    user: data.user,
-                    agree: data.agree,
-                    ciCheck: ciCheckData.data,
-                  },
-                  fromLogin,
-                });
-
-                if (snsCheckData.header?.code === "C0010") {
-                  // 연동 X
-                  router.push(
-                    localePath(useEtcRoute("/sign-up/kakao-connect")),
-                  );
-                } else {
-                  // 연동 O
-                  router.push(
-                    localePath(useEtcRoute("/sign-up/kakao-account-exists")),
-                  );
                 }
               }
             },

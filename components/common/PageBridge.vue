@@ -9,6 +9,18 @@ const stores = {
 // lottie
 const animationData = ref(loadingJson);
 
+// computed
+const useLoading = computed(() => {
+  return stores.layout.useLoading;
+});
+
+// watch
+watch(useLoading, () => {
+  if (useLoading.value) {
+    stores.layout.$setUseLoading(false);
+  }
+});
+
 // life cycle
 onBeforeMount(() => {
   stores.layout.$setUseLoading(false);

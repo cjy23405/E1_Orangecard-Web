@@ -31,10 +31,6 @@ const goStore = () => {
 const checkApp = (url: string) => {
   if (!window && !document) return;
 
-  const userAgent = window.navigator.userAgent;
-  const isIos = Boolean(userAgent.match(/iPod|iPhone|iPad/));
-  const isAndroid = Boolean(userAgent.match(/Android/));
-
   const timer = setTimeout(() => {
     goStore();
   }, 3000);
@@ -55,14 +51,7 @@ const checkApp = (url: string) => {
     () => {
       if (document.visibilityState === "hidden") {
         clearTimeout(timer);
-
-        if (isIos) {
-          window.location.href = "kakaotalk://inappbrowser/close";
-        } else if (isAndroid) {
-          window.location.href = "kakaoweb://closeBrowser";
-        }
-
-        window.close();
+        $kakaotalkClose();
       }
     },
     {

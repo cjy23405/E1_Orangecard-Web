@@ -16,6 +16,8 @@ export const useHookKakaoAuthSetup = () => {
   // 카카오 관련
   window.Kakao.init(keys.script);
 
+  const state = window.location.search || "";
+
   if (window.Kakao.isInitialized()) {
     window.Kakao.Auth.authorize({
       redirectUri: `${window.location.origin}/auth/kakao/callback`,
@@ -24,6 +26,7 @@ export const useHookKakaoAuthSetup = () => {
         "account_email, name, birthday, birthyear, phone_number, account_ci",
       serviceTerms:
         "agree_use, agree_private, agree_private_opt, agree_email, agree_sms, agree_benefit, agree_talk",
+      state,
     });
   }
 };
@@ -69,7 +72,7 @@ export const useHookKakaoAuthCallback = async (isSelf: boolean = false) => {
       window.location.origin,
     );
 
-    window.close();
+    $kakaotalkClose();
   }
 };
 
@@ -213,7 +216,8 @@ export const useHookKakaoAuth = (name: string) => {
   if (!endpoint || !window) return null;
 
   const origin = window.location.origin;
-  const path = `${endpoint}`;
+  const query = window.location.search || "";
+  const path = `${endpoint}${query}`;
 
   return useHookPopupSet<KakaoAuthData>({
     path,

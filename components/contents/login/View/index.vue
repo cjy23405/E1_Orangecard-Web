@@ -2,8 +2,9 @@
 import type { LoginSetup } from "@/types/api";
 
 // props
-defineProps<{
+const props = defineProps<{
   callback?: LoginSetup["callback"];
+  titiTalk?: boolean;
 }>();
 
 // 스토어
@@ -15,6 +16,7 @@ const stores = {
 const localePath = useLocalePath();
 const router = useRouter();
 const route = useRoute();
+const { returnurl } = route.query;
 
 // session
 const etcInflow = useSessionStorage<string | null>("etcInflow", null);
@@ -26,11 +28,18 @@ const isAuthenticated = computed(() => {
 
 // check login
 const checkLogin = () => {
-  if (isAuthenticated.value) {
-    if (etcInflow.value) {
+  if (!props.titiTalk && isAuthenticated.value) {
+    if (stores.auth.loginInfo?.pwdChangeReq) {
+      router.replace({
+        path: localePath(useEtcRoute("/login/change-pw")),
+        query: {
+          returnurl: typeof returnurl === "string" ? returnurl : undefined,
+        },
+      });
+    } else if (etcInflow.value) {
       router.replace(etcInflow.value);
-    } else if (typeof route.query.returnurl === "string") {
-      router.replace(route.query.returnurl);
+    } else if (typeof returnurl === "string") {
+      router.replace(returnurl);
     } else {
       $replaceHome();
     }

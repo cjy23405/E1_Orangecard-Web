@@ -6,6 +6,9 @@ import type { MaintenanceData, MaintenanceDataItem } from "@/types/common";
 const { $constants } = useNuxtApp();
 const downloadURL = $constants.downloadURL();
 
+// route
+const router = useRouter();
+
 // state
 const data = ref<MaintenanceDataItem | null>(null);
 
@@ -35,6 +38,10 @@ const init = async () => {
       }
     });
   }
+
+  if (!data.value) {
+    router.replace("/");
+  }
 };
 
 // life cycle
@@ -46,7 +53,8 @@ onMounted(async () => {
 <template>
   <div
     v-if="data"
-    class="inner relative flex min-h-[80vh] flex-col justify-center text-center md:min-h-[70vh] md:!pt-0"
+    id="maintenance"
+    class="inner relative flex min-h-[30rem] flex-1 flex-col justify-center px-8 text-center md:min-h-[40rem] md:items-center md:!pt-0"
   >
     <p
       class="fs-16 check font-bold text-gray-700 before:mb-[1.6rem] before:block before:h-[8.4rem] before:w-full before:bg-contain before:bg-center before:bg-no-repeat before:content-[''] md:before:h-60"
@@ -55,18 +63,23 @@ onMounted(async () => {
     </p>
 
     <CommonTextData
-      class="fs-14 mt-[1.6rem] text-gray-600"
+      class="fs-14 border-bottom mt-[1.6rem] pb-8 text-gray-600"
       :contents="data.inspectionContent"
     />
 
-    <p class="border-top fs-14 mt-8 block pt-8 font-bold text-primary">
-      {{
-        useFormattedDate(data.inspectionStartDateTime, "yyyy년 MM월 dd일 hh:mm")
-      }}
-      ~
-      {{
-        useFormattedDate(data.inspectionEndDateTime, "yyyy년 MM월 dd일 hh:mm")
-      }}
+    <p class="border-top fs-14 mt-[-0.1rem] block pt-8 font-bold text-primary">
+      <span class="inline-block"
+        >{{
+          useFormattedDate(
+            data.inspectionStartDateTime,
+            "yyyy년 MM월 dd일 HH:mm",
+          )
+        }}
+        ~&nbsp;</span
+      >
+      <span class="inline-block">{{
+        useFormattedDate(data.inspectionEndDateTime, "yyyy년 MM월 dd일 HH:mm")
+      }}</span>
     </p>
   </div>
 </template>

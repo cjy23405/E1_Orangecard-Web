@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { HookSelfGetDataEvent, KakaoAuthData } from "@/types/hooks";
-import type { LoginSetup } from "@/types/api";
 import type { AlertOptions } from "@/types/components/common/Alert";
 
 // uid
@@ -11,20 +9,22 @@ const stores = {
   auth: useStoreAuth(),
 };
 
+// hook
+const hookKakaoAuth = useHookKakaoAuth("_self");
+
 // api
 const apiEvent = useApiEventEntryPermaLink(uid);
 const apiCampaign = useApiEventCampaignEntryPermaLink(uid);
 
 // session
+const kakaoSelfLogin = useSessionStorage<string | null>("kakaoSelfLogin", null);
 const etcInflow = useSessionStorage<string | null>("etcInflow", null);
+const campaignNo = useSessionStorage<string | null>("campaignNo", null);
 
 // route
 const localePath = useLocalePath();
 const route = useRoute();
 const router = useRouter();
-
-// ref
-const raw = useTemplateRef("raw");
 
 // computed
 const isAuthenticated = computed(() => {
@@ -40,81 +40,82 @@ const checkQuery = (key: string) => {
   }
 };
 
+// 카카오 인증
+const kakaoAuth = () => {
+  kakaoSelfLogin.value = "permalink";
+  hookKakaoAuth?.open();
+};
+
 // init
 const init = () => {
   if (!window) return;
 
-  const code = checkQuery("code");
+  const cn = checkQuery("CN");
   const reurl = checkQuery("reurl");
   const event = checkQuery("event");
   const eventAuto = checkQuery("event-auto");
   const cam = checkQuery("cam");
   const query = checkQuery("query");
 
+  if (cn) {
+    campaignNo.value = cn;
+  }
+
   if (reurl) {
-    if (/^\//.test(reurl)) {
-      router.replace(localePath(reurl));
+    if (isAuthenticated.value) {
+      reurlCallback();
     } else {
-      window.location.replace(reurl);
+      etcInflow.value = localePath(`/etc/kakao-permalink?reurl=${reurl}`);
+      kakaoAuth();
     }
   } else if (event) {
-    router.replace(localePath(`/event/${event}`));
-  } else if (eventAuto) {
-    if (!code && isAuthenticated.value) {
-      eventCallback();
+    if (isAuthenticated.value) {
+      router.replace(localePath(`/event/${event}`));
     } else {
-      beforeCallback.value = eventBeforeCallback;
-      afterCallback.value = eventCallback;
-      useHookKakaoAuthCallback(true);
+      etcInflow.value = localePath(`/event/${event}`);
+      kakaoAuth();
+    }
+  } else if (eventAuto) {
+    if (isAuthenticated.value) {
+      eventAutoCallback();
+    } else {
+      etcInflow.value = localePath(
+        `/etc/kakao-permalink?event-auto=${eventAuto}`,
+      );
+      kakaoAuth();
     }
   } else if (cam) {
-    if (!code && isAuthenticated.value) {
+    if (isAuthenticated.value) {
       campaignCallback();
     } else {
-      beforeCallback.value = campaignBeforeCallback;
-      afterCallback.value = campaignCallback;
-      useHookKakaoAuthCallback(true);
+      etcInflow.value = localePath(`/etc/kakao-permalink?cam=${cam}`);
+      kakaoAuth();
     }
   } else if (query && query === "oca-add") {
-    beforeCallback.value = cardCallback;
-    useHookKakaoAuthCallback(true);
-  }
-};
-
-// kakao login
-const beforeCallback = ref<() => void>();
-const afterCallback = ref<LoginSetup["callback"]>();
-const kakaoLogin = useDebounceFn((event: HookSelfGetDataEvent) => {
-  if (event.data.action === "onAuthKakaoResult") {
-    const kakaoData = event.data.params[0] as KakaoAuthData;
-
-    if (typeof beforeCallback.value === "function") {
-      beforeCallback.value();
+    if (isAuthenticated.value) {
+      router.replace(localePath("/etc/kakao-permalink/card"));
+    } else {
+      etcInflow.value = localePath("/etc/kakao-permalink/card");
+      kakaoAuth();
     }
-
-    raw.value?.kakaoLogin(kakaoData, afterCallback.value);
   }
-}, 300);
-
-// hookMessage
-const hookMessage = (e: HookSelfGetDataEvent) => {
-  useHookSelfGetData(e, kakaoLogin);
 };
 
-// card callback
-const cardCallback = () => {
-  etcInflow.value = localePath("/etc/kakao-permalink/card");
+// reurl callback
+const reurlCallback = () => {
+  const reurl = checkQuery("reurl");
+
+  if (!reurl) return;
+
+  if (/^\//.test(reurl)) {
+    router.replace(localePath(reurl));
+  } else {
+    window.location.replace(reurl);
+  }
 };
 
 // event callback
-const eventBeforeCallback = () => {
-  const eventAuto = checkQuery("event-auto");
-
-  if (!eventAuto) return;
-
-  etcInflow.value = localePath(`/etc/kakao-permalink?event-auto=${eventAuto}`);
-};
-const eventCallback = () => {
+const eventAutoCallback = () => {
   const eventAuto = checkQuery("event-auto");
 
   if (!eventAuto) return;
@@ -155,13 +156,6 @@ const eventCallback = () => {
 };
 
 // campaign callback
-const campaignBeforeCallback = () => {
-  const cam = checkQuery("cam");
-
-  if (!cam) return;
-
-  etcInflow.value = localePath(`/etc/kakao-permalink?cam=${cam}`);
-};
 const campaignCallback = () => {
   const cam = checkQuery("cam");
 
@@ -211,21 +205,12 @@ const alertOpen = (customOptions: AlertOptions) => {
 // life cycle
 onMounted(() => {
   init();
-
-  document.addEventListener("kakaoSDKLoaded", init);
-  window.addEventListener("message", hookMessage);
-});
-
-onBeforeUnmount(() => {
-  document.removeEventListener("kakaoSDKLoaded", init);
-  window.removeEventListener("message", hookMessage);
 });
 </script>
 
 <template>
   <div>
     <CommonPageBridge />
-    <ContentsLoginViewKakaoRaw ref="raw" />
     <CommonAlert ref="alertLayer" />
   </div>
 </template>

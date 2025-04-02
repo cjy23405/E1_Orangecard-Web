@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { DateTime } from "luxon";
 import type { WallpaperDownloadCountRequest } from "@/types/api";
 import type { CarouselApi } from "@/components/ui/carousel";
 import type { AlertOptions } from "@/types/components/common/Alert";
@@ -12,6 +13,9 @@ const apiCount = useApiWallpaperDownloadCount(uid);
 
 // api ssr
 await apiList.suspense();
+
+// state
+const now = ref<number>();
 
 // computed
 const list = computed(() => {
@@ -53,6 +57,19 @@ const downloadApp = (url: string) => {
   downloadCount("APP");
 };
 
+// 이미지 cover
+const imgCover = (e: Event) => {
+  const img = e.target as HTMLImageElement;
+  const parent = img.parentElement;
+
+  if (parent && parent.clientHeight > img.offsetHeight) {
+    img.style.width = "auto";
+    img.style.height = "100.4%";
+  }
+
+  img.style.opacity = "1";
+};
+
 // 얼럿
 const alertLayer = useTemplateRef("alertLayer");
 const alertOpen = (customOptions: AlertOptions) => {
@@ -77,6 +94,11 @@ watchOnce(carousel, (carousel) => {
   carousel.on("select", () => {
     current.value = carousel.selectedScrollSnap() + 1;
   });
+});
+
+// life cycle
+onMounted(() => {
+  now.value = DateTime.now().toMillis();
 });
 </script>
 
@@ -104,18 +126,18 @@ watchOnce(carousel, (carousel) => {
           <CarouselContent>
             <CarouselItem v-for="item in list" :key="item.wallpaperId">
               <div class="wallpapaer flex p-4">
-                <div
-                  class="wallpapaer-img min-w-0 flex-1"
-                  :style="{
-                    background: `url('${item.imageUrlWeb}') no-repeat 50% 50% / cover`,
-                  }"
-                ></div>
-                <div
-                  class="wallpapaer-img w-[21.5%] flex-none"
-                  :style="{
-                    background: `url('${item.imageUrlApp}') no-repeat 50% 50% / cover`,
-                  }"
-                ></div>
+                <div class="wallpapaer-img min-w-0 flex-1">
+                  <img
+                    :src="`${item.imageUrlWeb}?now=${now}`"
+                    @load="imgCover"
+                  />
+                </div>
+                <div class="wallpapaer-img w-[21.5%] flex-none">
+                  <img
+                    :src="`${item.imageUrlApp}?now=${now}`"
+                    @load="imgCover"
+                  />
+                </div>
               </div>
             </CarouselItem>
           </CarouselContent>
@@ -215,12 +237,35 @@ watchOnce(carousel, (carousel) => {
   aspect-ratio: 320 / 136;
 }
 .wallpapaer .wallpapaer-img {
+  position: relative;
   border-radius: 0.8rem;
   box-shadow: 0 1.8px 5.5px 0 rgba(0, 0, 0, 0.25);
   border: solid 0.4rem #1d2023;
   height: 100%;
   overflow: hidden;
   box-sizing: border-box;
+}
+.wallpapaer .wallpapaer-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.wallpapaer .wallpapaer-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100.4%;
+  max-width: none;
+  max-height: none;
+  opacity: 0;
 }
 .wallpapaer .wallpapaer-img + .wallpapaer-img {
   margin-left: 6px;

@@ -20,6 +20,9 @@ const stores = {
   auth: useStoreAuth(),
 };
 
+// session
+const titiTalkLogin = useSessionStorage<string | null>("titiTalkLogin", null);
+
 // api
 const apiMyProfile = useApiMyProfile(false);
 const apiEncodeCustomerKey = useApiMyEncodeCustomerKey(uid);
@@ -108,6 +111,8 @@ const loginCallback: LoginSetup["callback"] = (type, data) => {
 
 // init
 const init = () => {
+  titiTalkLogin.value = "true";
+
   if (stores.auth.isAuthenticated) {
     apiMyProfile
       .refetch()
@@ -130,7 +135,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <ContentsLoginView :callback="loginCallback" />
+  <ContentsLoginView :callback="loginCallback" :titi-talk="true" />
 
   <ClientOnly>
     <form ref="form" method="post" :action="callback_url || ''">

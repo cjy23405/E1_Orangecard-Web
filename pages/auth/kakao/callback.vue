@@ -1,14 +1,16 @@
 <script setup lang="ts">
 // session
+const kakaoSelfLogin = useSessionStorage<string | null>("kakaoSelfLogin", null);
 const titiTalkAuth = useSessionStorage<string | null>("titiTalkAuth", null);
 
 // ref
+const selfLogin = useTemplateRef("selfLogin");
 const titiTalk = useTemplateRef("titiTalk");
 
 // callback
 const callback = useDebounceFn(() => {
-  if (titiTalk.value) {
-    useHookKakaoAuthCallback(!!titiTalkAuth.value);
+  if (titiTalk.value && selfLogin.value) {
+    useHookKakaoAuthCallback(!!titiTalkAuth.value || !!kakaoSelfLogin.value);
   }
 }, 1000);
 
@@ -18,8 +20,8 @@ const init = () => {
 };
 
 // watch
-watch(titiTalk, (titiTalk) => {
-  if (titiTalk) {
+watch([titiTalk, selfLogin], () => {
+  if (titiTalk.value && selfLogin.value) {
     init();
   }
 });
@@ -38,6 +40,7 @@ onBeforeUnmount(() => {
 
 <template>
   <ClientOnly>
+    <ContentsAuthKakaoSelfLogin ref="selfLogin" />
     <ContentsTitiTalkAuthSendForm ref="titiTalk" />
   </ClientOnly>
 </template>

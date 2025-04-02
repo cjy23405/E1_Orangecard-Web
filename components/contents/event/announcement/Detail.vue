@@ -94,27 +94,29 @@ $setSEO({
         class="border-y border-solid border-gray-300 p-8 pb-6 md:border-t-0 md:px-16 md:py-12"
       >
         <div class="md:flex md:flex-row">
-          <span
-            v-if="fuelTypeList.length >= 3"
-            class="fs-12 font-bold text-gray-600 md:hidden md:!text-lg"
-          >
-            전체
-          </span>
-          <template v-else>
+          <span class="bar bar-gray block md:hidden">
             <span
-              v-for="type in fuelTypeList"
-              :key="type"
-              :class="[
-                'fs-12 font-bold md:hidden md:!text-lg',
-                {
-                  'text-primary': type === 'L',
-                  'text-e1h2blue': type === 'H',
-                  'text-e1evgreen': type === 'E',
-                },
-              ]"
-              >{{ useFuelName(type) }}</span
+              v-if="fuelTypeList.length >= 3"
+              class="fs-12 font-bold text-gray-600 md:!text-lg"
             >
-          </template>
+              전체
+            </span>
+            <template v-else>
+              <span
+                v-for="type in fuelTypeList"
+                :key="type"
+                :class="[
+                  'fs-12 font-bold md:!text-lg',
+                  {
+                    'text-primary': type === 'L',
+                    'text-e1h2blue': type === 'H',
+                    'text-e1evgreen': type === 'E',
+                  },
+                ]"
+                >{{ useFuelName(type) }}</span
+              >
+            </template>
+          </span>
 
           <p
             class="fs-16 my-[.6rem] break-all font-bold md:my-0 md:mr-8 md:min-w-0 md:flex-1"

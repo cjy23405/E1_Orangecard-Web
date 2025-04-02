@@ -9,7 +9,7 @@ const uid = getCurrentInstance()?.uid;
 
 // api
 const apiMyProfile = useApiMyProfile();
-const apiMyNewPassword = useApiMyNewPassword(uid);
+const apiMyNewPassword = useApiMyCreatePassword(uid);
 
 // api ssr
 await apiMyProfile.suspense();
@@ -24,7 +24,7 @@ const loginId = computed(() => {
 });
 
 // form
-class NewPasswordForm {
+class CreatePasswordForm {
   password: string = "";
   passwordCheck: string = "";
 }
@@ -36,7 +36,7 @@ const labels: {
 };
 const form = useTemplateRef("form");
 const formRaw = useTemplateRef("formRaw");
-const initialValues = plainToClass(NewPasswordForm, {});
+const initialValues = plainToClass(CreatePasswordForm, {});
 const formSchema = toTypedSchema(
   z.object({
     password: z.string().superRefine((val, ctx) => {
@@ -56,7 +56,7 @@ const formSchema = toTypedSchema(
     }),
 
     passwordCheck: z.string().superRefine((val, ctx) => {
-      const formValues = form.value?.getValues() as NewPasswordForm;
+      const formValues = form.value?.getValues() as CreatePasswordForm;
 
       if (!formValues) return;
 
@@ -77,7 +77,7 @@ const formSchema = toTypedSchema(
 
 // 비밀번호 생성
 const reset = useDebounceFn(() => {
-  const values = form.value?.values as NewPasswordForm;
+  const values = form.value?.values as CreatePasswordForm;
 
   if (!values) return;
 

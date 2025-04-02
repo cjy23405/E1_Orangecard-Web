@@ -27,6 +27,7 @@ export class LoginInfoData {
   eTierNm!: string;
   repFuelType!: FuelCode;
   repFuelTypeNm!: string;
+  pwdChangeReq?: boolean;
 }
 export type LoginInfo = LoginInfoData | null;
 export interface LoginResponseCommon extends LoginInfoData {

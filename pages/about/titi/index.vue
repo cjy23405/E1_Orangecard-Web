@@ -13,9 +13,10 @@ const stores = {
 onBeforeMount(() => {
   // 레이아웃 추가 설정
   stores.layout.$setGnbActive("001002");
-  stores.layout.$setPageTitle(
-    `${useT("location.001002000")} ${useT("location.001002")}`,
-  );
+  // stores.layout.$setPageTitle(
+  //   `${useT("location.001002000")} ${useT("location.001002")}`,
+  // );
+  stores.layout.$setPageTitle(useT("location.001002"));
 });
 
 // SEO

@@ -18,6 +18,8 @@ export default defineI18nConfig(() => ({
     "/titi-talk/auth",
     "/titi-talk/login",
     "/m/join/kakao/permalink",
+    "/m/event/869",
     "/etc/kakao-permalink",
+    "/etc/kakao-permalink/event",
   ],
 }));

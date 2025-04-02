@@ -95,8 +95,14 @@ export class MyRenameRequest {
 }
 
 // 비밀번호 변경 - [B2C_MBR_002]
-export class MyNewPasswordRequest {
+export class MyCreatePasswordRequest {
   password!: string;
+}
+
+// 비밀번호 변경(기존 비밀번호 포함) - [B2C_MBR_003]
+export class MyChangePasswordRequest {
+  password!: string;
+  passwordNew!: string;
 }
 
 // SNS 연결 설정 - [B2C_MBR_006]
