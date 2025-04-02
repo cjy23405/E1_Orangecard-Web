@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { DateTime } from "luxon";
-import type { MaintenanceData, MaintenanceDataItem } from "@/types/common";
-
-// 상수
-const { $constants } = useNuxtApp();
-const downloadURL = $constants.downloadURL();
+import type { MaintenanceDataItem } from "@/types/common";
 
 // route
 const router = useRouter();
@@ -14,18 +10,15 @@ const data = ref<MaintenanceDataItem | null>(null);
 
 // init
 const init = async () => {
-  const now = DateTime.now().toMillis();
-  const res = await $fetch
-    .raw<MaintenanceData>(
-      `${downloadURL}/upload/Inspection/inspection_data.json?now=${now}`,
-      {
-        ignoreResponseError: true,
-      },
-    )
-    .catch(() => {});
+  // 상수
+  const { $remoteConfig } = useNuxtApp();
+  const remoteConfig = $remoteConfig ? await $remoteConfig() : null;
 
-  if (res && res.ok && res._data) {
-    const list = res._data;
+  // set
+  const now = DateTime.now().toMillis();
+
+  if (remoteConfig) {
+    const list = remoteConfig.inspection || [];
 
     list.forEach((item) => {
       if (item.postYn === "Y") {

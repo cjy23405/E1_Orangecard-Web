@@ -45,6 +45,30 @@ const kakaoKeys = (): {
   };
 };
 
+// firebase config
+const firebaseConfig = (): {
+  apiKey: string;
+  authDomain: string;
+  databaseURL: string;
+  projectId: string;
+  storageBucket: string;
+  messagingSenderId: string;
+  appId: string;
+  measurementId: string;
+} => {
+  return {
+    apiKey: useRuntimeConfig().public.FIREBASE_API_KEY || "",
+    authDomain: useRuntimeConfig().public.FIREBASE_AUTH_DOMAIN || "",
+    databaseURL: useRuntimeConfig().public.FIREBASE_DATABASE_URL || "",
+    projectId: useRuntimeConfig().public.FIREBASE_PROJECT_ID || "",
+    storageBucket: useRuntimeConfig().public.FIREBASE_STORAGE_BUCKET || "",
+    messagingSenderId:
+      useRuntimeConfig().public.FIREBASE_MESSAGING_SENDER_ID || "",
+    appId: useRuntimeConfig().public.FIREBASE_APP_ID || "",
+    measurementId: useRuntimeConfig().public.FIREBASE_MEASUREMENT_ID || "",
+  };
+};
+
 // export
 export default {
   isDev,
@@ -55,4 +79,5 @@ export default {
   hookBaseURL,
   naverClientID,
   kakaoKeys,
+  firebaseConfig,
 };
